@@ -1,4 +1,4 @@
-package com.hanvon.ruoyimodulescoms;
+package com.ruoyi.cms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
