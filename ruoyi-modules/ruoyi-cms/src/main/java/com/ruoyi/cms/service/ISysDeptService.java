@@ -1,7 +1,7 @@
 package com.ruoyi.cms.service;
 
 import com.ruoyi.cms.plus.TreeSelect;
-import com.ruoyi.system.api.domain.SysDept;
+import com.ruoyi.cms.plus.cloud.SysDept;
 
 import java.util.List;
 

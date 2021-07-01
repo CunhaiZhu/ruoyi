@@ -4,13 +4,14 @@ package com.ruoyi.cms.service.impl;
 import com.ruoyi.cms.mapper.SysCmsDeptMapper;
 import com.ruoyi.cms.mapper.SysCmsRoleMapper;
 import com.ruoyi.cms.plus.TreeSelect;
+import com.ruoyi.cms.plus.cloud.SysDept;
 import com.ruoyi.cms.service.ISysDeptService;
 import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.exception.CustomException;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.common.datascope.annotation.DataScope;
-import com.ruoyi.system.api.domain.SysDept;
+
 import com.ruoyi.system.api.domain.SysRole;
 
 import org.springframework.stereotype.Service;

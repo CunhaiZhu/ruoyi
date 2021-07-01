@@ -7,15 +7,15 @@ import java.util.List;
 
 /**
  * 广告位Mapper接口
- * 
+ *
  * @author wujiyue
  * @date 2019-11-16
  */
-public interface AdMapper 
+public interface AdMapper
 {
     /**
      * 查询广告位
-     * 
+     *
      * @param adId 广告位ID
      * @return 广告位
      */
@@ -23,7 +23,7 @@ public interface AdMapper
 
     /**
      * 查询广告位列表
-     * 
+     *
      * @param ad 广告位
      * @return 广告位集合
      */
@@ -31,7 +31,7 @@ public interface AdMapper
 
     /**
      * 新增广告位
-     * 
+     *
      * @param ad 广告位
      * @return 结果
      */
@@ -39,7 +39,7 @@ public interface AdMapper
 
     /**
      * 修改广告位
-     * 
+     *
      * @param ad 广告位
      * @return 结果
      */
@@ -47,7 +47,7 @@ public interface AdMapper
 
     /**
      * 删除广告位
-     * 
+     *
      * @param adId 广告位ID
      * @return 结果
      */
@@ -55,7 +55,7 @@ public interface AdMapper
 
     /**
      * 批量删除广告位
-     * 
+     *
      * @param adIds 需要删除的数据ID
      * @return 结果
      */

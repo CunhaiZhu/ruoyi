@@ -12,10 +12,10 @@ import com.ruoyi.cms.util.CmsConstants;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.DateUtils;
 import com.ruoyi.system.api.domain.SysUser;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -27,9 +27,9 @@ import java.util.List;
 @Service
 public class AdServiceImpl implements IAdService
 {
-    @Autowired
+    @Resource
     private AdMapper adMapper;
-    @Autowired
+    @Resource
     private MaterialMapper materialMapper;
 
     /**

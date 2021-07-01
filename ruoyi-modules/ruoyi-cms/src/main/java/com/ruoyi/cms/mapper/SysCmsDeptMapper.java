@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
-import com.ruoyi.system.api.domain.SysDept;
+
+import com.ruoyi.cms.plus.cloud.SysDept;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public interface SysCmsDeptMapper
      * @param dept 部门信息
      * @return 部门信息集合
      */
-    public List<SysDept> selectDeptList(SysDept dept);
+    public List<SysDept> selectDeptList(@Param("dept") SysDept dept);
 
     /**
      * 根据角色ID查询部门树信息
