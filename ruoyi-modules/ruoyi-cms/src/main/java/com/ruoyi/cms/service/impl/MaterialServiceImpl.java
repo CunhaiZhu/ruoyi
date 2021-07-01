@@ -5,10 +5,10 @@ import java.util.List;
 
 import com.ruoyi.cms.domain.MaterialUse;
 import com.ruoyi.cms.util.CmsConstants;
+import com.ruoyi.common.core.cms.FileUploadUtils;
 import com.ruoyi.common.core.utils.Guid;
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.cms.util.framework.ShiroUtils;
 import com.ruoyi.common.datascope.annotation.DataScope;
-import com.ruoyi.file.utils.FileUploadUtils;
 import com.ruoyi.system.api.domain.SysUser;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;

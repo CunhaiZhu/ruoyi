@@ -2,7 +2,7 @@ package com.ruoyi.cms.service.impl;
 
 import java.util.List;
 
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.cms.util.framework.ShiroUtils;
 import com.ruoyi.system.api.domain.SysUser;
 
 import org.springframework.beans.factory.annotation.Autowired;

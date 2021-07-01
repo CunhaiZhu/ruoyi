@@ -1,7 +1,7 @@
 package com.ruoyi.cms.controller;
 import com.alibaba.fastjson.JSON;
-import com.ruoyi.common.core.thread.Global;
-import com.ruoyi.file.utils.FileUploadUtils;
+import com.ruoyi.common.core.cms.FileUploadUtils;
+import com.ruoyi.common.core.cms.thread.Global;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

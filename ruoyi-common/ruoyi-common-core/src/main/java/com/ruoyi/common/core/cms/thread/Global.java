@@ -1,6 +1,6 @@
-package com.ruoyi.common.core.thread;
+package com.ruoyi.common.core.cms.thread;
 
-import com.ruoyi.common.utils.StringUtils;
+import com.ruoyi.common.core.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
@@ -33,47 +33,47 @@ public class Global
     @Value("${ruoyi.name}")
     public void setName(String name)
     {
-        com.ruoyi.common.config.Global.name = name;
+        Global.name = name;
     }
 
     @Value("${ruoyi.version}")
     public void setVersion(String version)
     {
-        com.ruoyi.common.config.Global.version = version;
+        Global.version = version;
     }
 
     @Value("${ruoyi.copyrightYear}")
     public void setCopyrightYear(String copyrightYear)
     {
-        com.ruoyi.common.config.Global.copyrightYear = copyrightYear;
+        Global.copyrightYear = copyrightYear;
     }
 
     @Value("${ruoyi.demoEnabled}")
     public void setDemoEnabled(String demoEnabled)
     {
-        com.ruoyi.common.config.Global.demoEnabled = demoEnabled;
+        Global.demoEnabled = demoEnabled;
     }
 
    @Value("${ruoyi.addressEnabled}")
     public void setAddressEnabled(Boolean addressEnabled)
    {
-        com.ruoyi.common.config.Global.addressEnabled = addressEnabled;
+        Global.addressEnabled = addressEnabled;
     }
     @Value("${ruoyi.menuStyle}")
     public void setMenuStyle(String menuStyle)
     {
-        com.ruoyi.common.config.Global.menuStyle = menuStyle;
+        Global.menuStyle = menuStyle;
     }
     @Value("${ruoyi.profile}")
     public void setProfile(String profile)
     {
-        com.ruoyi.common.config.Global.profile = profile;
+        Global.profile = profile;
     }
 
     @Value("${ruoyi.cacheEnabled}")
     public void setCacheEnabled(String cacheEnabled)
     {
-        com.ruoyi.common.config.Global.cacheEnabled = cacheEnabled;
+        Global.cacheEnabled = cacheEnabled;
     }
 
     /**

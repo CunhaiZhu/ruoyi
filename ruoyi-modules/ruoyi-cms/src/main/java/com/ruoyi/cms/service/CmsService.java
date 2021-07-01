@@ -7,7 +7,7 @@ import com.github.pagehelper.PageHelper;
 import com.google.common.collect.Lists;
 import com.ruoyi.cms.domain.*;
 import com.ruoyi.cms.util.CmsConstants;
-import com.ruoyi.common.core.thread.Global;
+import com.ruoyi.common.core.cms.thread.Global;
 import com.ruoyi.common.core.utils.StringUtils;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;

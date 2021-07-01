@@ -6,7 +6,7 @@ import com.ruoyi.common.core.utils.StringUtils;
 
 /**
  * 操作消息提醒
- * 
+ *
  * @author ruoyi
  */
 public class AjaxResult extends HashMap<String, Object>
@@ -31,7 +31,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 初始化一个新创建的 AjaxResult 对象
-     * 
+     *
      * @param code 状态码
      * @param msg 返回内容
      */
@@ -43,7 +43,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 初始化一个新创建的 AjaxResult 对象
-     * 
+     *
      * @param code 状态码
      * @param msg 返回内容
      * @param data 数据对象
@@ -57,7 +57,31 @@ public class AjaxResult extends HashMap<String, Object>
             super.put(DATA_TAG, data);
         }
     }
-    
+
+    /**
+     * 状态类型
+     */
+    public enum Type
+    {
+        /** 成功 */
+        SUCCESS(0),
+        /** 警告 */
+        WARN(301),
+        /** 错误 */
+        ERROR(500);
+        private final int value;
+
+        Type(int value)
+        {
+            this.value = value;
+        }
+
+        public int value()
+        {
+            return this.value;
+        }
+    }
+
     /**
      * 方便链式调用
      *
@@ -74,7 +98,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回成功消息
-     * 
+     *
      * @return 成功消息
      */
     public static AjaxResult success()
@@ -84,7 +108,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回成功数据
-     * 
+     *
      * @return 成功消息
      */
     public static AjaxResult success(Object data)
@@ -94,7 +118,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回成功消息
-     * 
+     *
      * @param msg 返回内容
      * @return 成功消息
      */
@@ -105,7 +129,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回成功消息
-     * 
+     *
      * @param msg 返回内容
      * @param data 数据对象
      * @return 成功消息
@@ -117,7 +141,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回错误消息
-     * 
+     *
      * @return
      */
     public static AjaxResult error()
@@ -127,7 +151,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回错误消息
-     * 
+     *
      * @param msg 返回内容
      * @return 警告消息
      */
@@ -138,7 +162,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回错误消息
-     * 
+     *
      * @param msg 返回内容
      * @param data 数据对象
      * @return 警告消息
@@ -150,7 +174,7 @@ public class AjaxResult extends HashMap<String, Object>
 
     /**
      * 返回错误消息
-     * 
+     *
      * @param code 状态码
      * @param msg 返回内容
      * @return 警告消息
@@ -158,5 +182,16 @@ public class AjaxResult extends HashMap<String, Object>
     public static AjaxResult error(int code, String msg)
     {
         return new AjaxResult(code, msg, null);
+    }
+
+    public  boolean isSuccess(){
+        Object o=this.get(AjaxResult.CODE_TAG);
+        if(o!=null){
+            int  code=(Integer) o;
+            if(code== Type.SUCCESS.value){
+                return true;
+            }
+        }
+        return false;
     }
 }

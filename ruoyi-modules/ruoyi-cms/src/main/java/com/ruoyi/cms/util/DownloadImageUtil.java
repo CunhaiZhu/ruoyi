@@ -2,10 +2,10 @@ package com.ruoyi.cms.util;
 
 import cn.hutool.cache.Cache;
 import cn.hutool.cache.CacheUtil;
-import com.ruoyi.common.config.Global;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.file.FileUploadUtils;
+import com.ruoyi.common.core.cms.FileUploadUtils;
+import com.ruoyi.common.core.cms.thread.Global;
+import com.ruoyi.common.core.utils.DateUtils;
+import com.ruoyi.common.core.utils.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -55,7 +55,7 @@ public class DownloadImageUtil {
             if(!checkNetUrlExists(urlPath)){
                 return "";
             }
-            String saveBathPath=Global.getUploadPath();
+            String saveBathPath= Global.getUploadPath();
             if(StringUtils.isNotEmpty(appendPath)){
                 appendPath=appendPath.startsWith("/")?appendPath:"/"+appendPath;
                 saveBathPath+=appendPath;

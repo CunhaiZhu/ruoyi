@@ -5,7 +5,7 @@ package com.ruoyi.common.core.cms.exception;
  *
  * @author ruoyi
  */
-public class UserDeleteException extends com.ruoyi.common.exception.user.UserException
+public class UserDeleteException extends UserException
 {
     private static final long serialVersionUID = 1L;
 

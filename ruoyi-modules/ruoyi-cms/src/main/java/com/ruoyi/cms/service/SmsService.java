@@ -1,11 +1,9 @@
 package com.ruoyi.cms.service;
 
-import com.ruoyi.cms.config.CmsConfig;
 import com.ruoyi.cms.domain.Template;
-import com.ruoyi.cms.util.email.MailSenderInfo;
-import com.ruoyi.cms.util.email.SimpleMailSender;
-import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.third.sms.SmsUtil;
+
+import com.ruoyi.cms.util.SmsUtil;
+import com.ruoyi.common.core.web.domain.AjaxResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +27,7 @@ public class SmsService {
                 content=content.replaceAll(key,value);
             }
 
-            AjaxResult result=SmsUtil.sendLeYunSms(phone,template.getTemplateName(),content);
+            AjaxResult result= SmsUtil.sendLeYunSms(phone,template.getTemplateName(),content);
 
             return result;
         }

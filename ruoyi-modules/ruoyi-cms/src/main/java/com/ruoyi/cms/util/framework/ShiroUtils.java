@@ -1,4 +1,4 @@
-package com.ruoyi.common.core.cms.framework;
+package com.ruoyi.cms.util.framework;
 
 
 import com.ruoyi.common.core.utils.StringUtils;
