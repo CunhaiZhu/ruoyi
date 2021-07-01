@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.cms.mapper.WebSiteMapper">
+
+
+	<select id="getSiteInfo" resultType="map">
+		select articleCount,tagCount,msgCount,categoryCount,hitCount,commentCount from
+		(SELECT
+		COUNT(1) AS articleCount
+		FROM
+		cms_article
+		WHERE available=1 and deleted=0
+		)a,
+		(SELECT
+		COUNT(1) AS tagCount
+		FROM
+		cms_tags
+		WHERE status=0 and (tag_type='s'or tag_type ='blogTab')
+		)b,
+		(SELECT
+		COUNT(1) AS msgCount
+		FROM
+		cms_comment
+		WHERE type='liuyan' and `status`=0
+		)c,
+		(SELECT
+		COUNT(1) AS categoryCount
+		FROM
+		cms_category
+		WHERE status=0
+		)d,
+		(	SELECT SUM(hitCount) as hitCount from(
+			select SUM(hit) as hitCount from cms_article
+			UNION
+			select SUM(hit) as hitCount from cms_album where album_type ='album'
+			)t
+		 )e,
+		 (select count(1) as commentCount  from cms_comment where `status`=0 and tid !=-1)f
+	</select>
+</mapper>
