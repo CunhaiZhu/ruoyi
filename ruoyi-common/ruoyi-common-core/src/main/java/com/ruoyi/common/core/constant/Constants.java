@@ -2,7 +2,7 @@ package com.ruoyi.common.core.constant;
 
 /**
  * 通用常量信息
- * 
+ *
  * @author ruoyi
  */
 public class Constants
@@ -106,4 +106,23 @@ public class Constants
      * 资源映射路径 前缀
      */
     public static final String RESOURCE_PREFIX = "/profile";
+
+    /**
+     * 参数管理 cache name
+     */
+    public static final String SYS_CONFIG_CACHE = "sys-config";
+
+
+
+    /**
+     * 字典管理 cache name
+     */
+    public static final String SYS_DICT_CACHE = "sys-dict";
+
+
+
+    /**
+     * uid
+     */
+    public static final String FRONT_COOKIE_UID = "uid";
 }
