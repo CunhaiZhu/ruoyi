@@ -14,6 +14,7 @@ import com.ruoyi.cms.plus.utils.ServletUtils;
 import com.ruoyi.cms.plus.utils.StringUtils;
 import com.ruoyi.cms.service.IArticleService;
 import com.ruoyi.cms.service.ICategoryService;
+import com.ruoyi.cms.service.ISysConfigService;
 import com.ruoyi.cms.service.ITagsService;
 import com.ruoyi.cms.util.CmsConstants;
 import com.ruoyi.common.core.text.Convert;
@@ -23,15 +24,16 @@ import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.common.core.web.page.TableDataInfo;
 import com.ruoyi.common.log.annotation.Log;
 import com.ruoyi.common.log.enums.BusinessType;
-import com.ruoyi.system.service.ISysConfigService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -57,10 +59,10 @@ public class ArticleController extends BaseController
     @Autowired
     ICategoryService categoryService;
     @Autowired
-    private ISysConfigService configService;
+    private ISysConfigService iSysConfigService;
 
     private String getEditorType(){
-        return configService.selectConfigByKey(CmsConstants.KEY_EDITOR_TYPE);
+        return iSysConfigService.selectConfigByKey(CmsConstants.KEY_EDITOR_TYPE);
     }
 
     @RequiresPermissions("cms:article:view")

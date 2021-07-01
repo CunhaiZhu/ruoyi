@@ -4,14 +4,13 @@ import cn.hutool.core.date.DateUtil;
 import com.ruoyi.cms.domain.UserSignIn;
 import com.ruoyi.cms.mapper.UserSignInMapper;
 import com.ruoyi.cms.plus.utils.ShiroUtils;
+import com.ruoyi.cms.service.ISysUserService;
 import com.ruoyi.cms.service.IUserSignInService;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.DateUtils;
 import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.service.ISysUserService;
 import org.apache.commons.collections.CollectionUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
