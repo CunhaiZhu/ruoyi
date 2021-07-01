@@ -13,19 +13,20 @@ import com.ruoyi.system.api.RemoteLogService;
 import com.ruoyi.system.api.RemoteUserService;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.api.model.LoginUser;
+import javax.annotation.Resource;
 
 /**
  * 登录校验方法
- * 
+ *
  * @author ruoyi
  */
 @Component
 public class SysLoginService
 {
-    @Autowired
+    @Resource
     private RemoteLogService remoteLogService;
 
-    @Autowired
+    @Resource
     private RemoteUserService remoteUserService;
 
     /**
