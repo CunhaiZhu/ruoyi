@@ -1,12 +1,13 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
+
 /**
  * 文件类型对象 cms_filetype
- *
+ * 
  * @author wujiyue
  * @date 2019-11-01
  */
@@ -29,39 +30,39 @@ public class Filetype extends BaseEntity
     @Excel(name = "图标")
     private String icon;
 
-    public void setId(Long id)
+    public void setId(Long id) 
     {
         this.id = id;
     }
 
-    public Long getId()
+    public Long getId() 
     {
         return id;
     }
-    public void setSuffix(String suffix)
+    public void setSuffix(String suffix) 
     {
         this.suffix = suffix;
     }
 
-    public String getSuffix()
+    public String getSuffix() 
     {
         return suffix;
     }
-    public void setName(String name)
+    public void setName(String name) 
     {
         this.name = name;
     }
 
-    public String getName()
+    public String getName() 
     {
         return name;
     }
-    public void setIcon(String icon)
+    public void setIcon(String icon) 
     {
         this.icon = icon;
     }
 
-    public String getIcon()
+    public String getIcon() 
     {
         return icon;
     }

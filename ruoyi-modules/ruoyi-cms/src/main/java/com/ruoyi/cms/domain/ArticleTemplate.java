@@ -1,14 +1,14 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
 import java.util.Date;
 
 /**
  * 文章模板对象 cms_article_template
- *
+ * 
  * @author markbro
  * @date 2019-12-31
  */
@@ -68,34 +68,34 @@ public class ArticleTemplate extends BaseEntity
     /** 原因 */
     private String auditReason;
 
-    public void setId(Long id)
+    public void setId(Long id) 
     {
         this.id = id;
     }
 
-    public Long getId()
+    public Long getId() 
     {
         return id;
     }
-    public void setName(String name)
+    public void setName(String name) 
     {
         this.name = name;
     }
 
-    public String getName()
+    public String getName() 
     {
         return name;
     }
-    public void setTags(String tags)
+    public void setTags(String tags) 
     {
         this.tags = tags;
     }
 
-    public String getTags()
+    public String getTags() 
     {
         return tags;
     }
-    public void setUserId(String userId)
+    public void setUserId(String userId) 
     {
         this.userId = userId;
     }
@@ -112,102 +112,102 @@ public class ArticleTemplate extends BaseEntity
     {
         return userId;
     }
-    public void setUserName(String userName)
+    public void setUserName(String userName) 
     {
         this.userName = userName;
     }
 
-    public String getUserName()
+    public String getUserName() 
     {
         return userName;
     }
-    public void setContent(String content)
+    public void setContent(String content) 
     {
         this.content = content;
     }
 
-    public String getContent()
+    public String getContent() 
     {
         return content;
     }
-    public void setShareType(String shareType)
+    public void setShareType(String shareType) 
     {
         this.shareType = shareType;
     }
 
-    public String getShareType()
+    public String getShareType() 
     {
         return shareType;
     }
-    public void setWeight(Long weight)
+    public void setWeight(Long weight) 
     {
         this.weight = weight;
     }
 
-    public Long getWeight()
+    public Long getWeight() 
     {
         return weight;
     }
-    public void setHotFalg(Integer hotFalg)
+    public void setHotFalg(Integer hotFalg) 
     {
         this.hotFalg = hotFalg;
     }
 
-    public Integer getHotFalg()
+    public Integer getHotFalg() 
     {
         return hotFalg;
     }
-    public void setNewFlag(Integer newFlag)
+    public void setNewFlag(Integer newFlag) 
     {
         this.newFlag = newFlag;
     }
 
-    public Integer getNewFlag()
+    public Integer getNewFlag() 
     {
         return newFlag;
     }
-    public void setAudit(Integer audit)
+    public void setAudit(Integer audit) 
     {
         this.audit = audit;
     }
 
-    public Integer getAudit()
+    public Integer getAudit() 
     {
         return audit;
     }
-    public void setAuditTime(Date auditTime)
+    public void setAuditTime(Date auditTime) 
     {
         this.auditTime = auditTime;
     }
 
-    public Date getAuditTime()
+    public Date getAuditTime() 
     {
         return auditTime;
     }
-    public void setAuditBy(String auditBy)
+    public void setAuditBy(String auditBy) 
     {
         this.auditBy = auditBy;
     }
 
-    public String getAuditBy()
+    public String getAuditBy() 
     {
         return auditBy;
     }
-    public void setAuditName(String auditName)
+    public void setAuditName(String auditName) 
     {
         this.auditName = auditName;
     }
 
-    public String getAuditName()
+    public String getAuditName() 
     {
         return auditName;
     }
-    public void setAuditReason(String auditReason)
+    public void setAuditReason(String auditReason) 
     {
         this.auditReason = auditReason;
     }
 
-    public String getAuditReason()
+    public String getAuditReason() 
     {
         return auditReason;
     }

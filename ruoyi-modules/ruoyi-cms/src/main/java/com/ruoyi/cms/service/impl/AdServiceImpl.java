@@ -1,5 +1,6 @@
 package com.ruoyi.cms.service.impl;
 
+import java.beans.Transient;
 import java.util.Date;
 import java.util.List;
 
@@ -8,9 +9,9 @@ import com.ruoyi.cms.domain.AdMaterial;
 import com.ruoyi.cms.domain.MaterialUse;
 import com.ruoyi.cms.mapper.MaterialMapper;
 import com.ruoyi.cms.util.CmsConstants;
-import com.ruoyi.common.core.utils.DateUtils;
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
-import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.common.utils.DateUtils;
+import com.ruoyi.framework.util.ShiroUtils;
+import com.ruoyi.system.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.AdMapper;
@@ -21,12 +22,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 广告位Service业务层处理
- *
+ * 
  * @author wujiyue
  * @date 2019-11-16
  */
 @Service
-public class AdServiceImpl implements IAdService
+public class AdServiceImpl implements IAdService 
 {
     @Autowired
     private AdMapper adMapper;
@@ -35,7 +36,7 @@ public class AdServiceImpl implements IAdService
 
     /**
      * 查询广告位
-     *
+     * 
      * @param adId 广告位ID
      * @return 广告位
      */
@@ -47,7 +48,7 @@ public class AdServiceImpl implements IAdService
 
     /**
      * 查询广告位列表
-     *
+     * 
      * @param ad 广告位
      * @return 广告位
      */
@@ -59,7 +60,7 @@ public class AdServiceImpl implements IAdService
 
     /**
      * 新增广告位
-     *
+     * 
      * @param ad 广告位
      * @return 结果
      */
@@ -72,7 +73,7 @@ public class AdServiceImpl implements IAdService
 
     /**
      * 修改广告位
-     *
+     * 
      * @param ad 广告位
      * @return 结果
      */
@@ -85,7 +86,7 @@ public class AdServiceImpl implements IAdService
 
     /**
      * 删除广告位对象
-     *
+     * 
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -97,7 +98,7 @@ public class AdServiceImpl implements IAdService
 
     /**
      * 删除广告位信息
-     *
+     * 
      * @param adId 广告位ID
      * @return 结果
      */

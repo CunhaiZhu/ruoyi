@@ -1,14 +1,15 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
+
 import java.util.List;
 
 /**
  * 链接分类对象 cms_link_type
- *
+ * 
  * @author wujiyue
  * @date 2019-11-26
  */
@@ -43,7 +44,7 @@ public class LinkType extends BaseEntity
 
     private List<Link> children;//扩展字段
 
-    public void setId(Long id)
+    public void setId(Long id) 
     {
         this.id = id;
     }
@@ -68,48 +69,48 @@ public class LinkType extends BaseEntity
     {
         return id;
     }
-    public void setLinkType(String linkType)
+    public void setLinkType(String linkType) 
     {
         this.linkType = linkType;
     }
 
-    public String getLinkType()
+    public String getLinkType() 
     {
         return linkType;
     }
-    public void setLinkTypeName(String linkTypeName)
+    public void setLinkTypeName(String linkTypeName) 
     {
         this.linkTypeName = linkTypeName;
     }
 
-    public String getLinkTypeName()
+    public String getLinkTypeName() 
     {
         return linkTypeName;
     }
-    public void setCoverImage(String coverImage)
+    public void setCoverImage(String coverImage) 
     {
         this.coverImage = coverImage;
     }
 
-    public String getCoverImage()
+    public String getCoverImage() 
     {
         return coverImage;
     }
-    public void setSort(Integer sort)
+    public void setSort(Integer sort) 
     {
         this.sort = sort;
     }
 
-    public Integer getSort()
+    public Integer getSort() 
     {
         return sort;
     }
-    public void setStatus(Integer status)
+    public void setStatus(Integer status) 
     {
         this.status = status;
     }
 
-    public Integer getStatus()
+    public Integer getStatus() 
     {
         return status;
     }

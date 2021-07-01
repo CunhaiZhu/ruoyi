@@ -1,13 +1,13 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 附件对象 cms_attachment
- *
+ * 
  * @author wujiyue
  * @date 2019-11-01
  */
@@ -54,75 +54,75 @@ public class Attachment extends BaseEntity
 
     //private String fileTypeName;
 
-    public void setAttachId(String attachId)
+    public void setAttachId(String attachId) 
     {
         this.attachId = attachId;
     }
 
-    public String getAttachId()
+    public String getAttachId() 
     {
         return attachId;
     }
-    public void setZid(String zid)
+    public void setZid(String zid) 
     {
         this.zid = zid;
     }
 
-    public String getZid()
+    public String getZid() 
     {
         return zid;
     }
-    public void setUserId(String userId)
+    public void setUserId(String userId) 
     {
         this.userId = userId;
     }
 
-    public String getUserId()
+    public String getUserId() 
     {
         return userId;
     }
-    public void setFileType(String fileType)
+    public void setFileType(String fileType) 
     {
         this.fileType = fileType;
     }
 
-    public String getFileType()
+    public String getFileType() 
     {
         return fileType;
     }
-    public void setFileName(String fileName)
+    public void setFileName(String fileName) 
     {
         this.fileName = fileName;
     }
 
-    public String getFileName()
+    public String getFileName() 
     {
         return fileName;
     }
-    public void setFilePath(String filePath)
+    public void setFilePath(String filePath) 
     {
         this.filePath = filePath;
     }
 
-    public String getFilePath()
+    public String getFilePath() 
     {
         return filePath;
     }
-    public void setSize(Long size)
+    public void setSize(Long size) 
     {
         this.size = size;
     }
 
-    public Long getSize()
+    public Long getSize() 
     {
         return size;
     }
-    public void setSort(Integer sort)
+    public void setSort(Integer sort) 
     {
         this.sort = sort;
     }
 
-    public Integer getSort()
+    public Integer getSort() 
     {
         return sort;
     }

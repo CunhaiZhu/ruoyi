@@ -6,10 +6,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import cn.hutool.core.date.DateUtil;
-import com.ruoyi.common.core.utils.DateUtils;
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
-import com.ruoyi.common.core.web.domain.AjaxResult;
-import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.common.core.domain.AjaxResult;
+import com.ruoyi.common.utils.DateUtils;
+import com.ruoyi.framework.util.ShiroUtils;
+import com.ruoyi.system.domain.SysUser;
 import com.ruoyi.system.service.ISysUserService;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +21,12 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 用户签到Service业务层处理
- *
+ * 
  * @author markbro
  * @date 2020-02-03
  */
 @Service
-public class UserSignInServiceImpl implements IUserSignInService
+public class UserSignInServiceImpl implements IUserSignInService 
 {
     @Autowired
     private UserSignInMapper userSignInMapper;
@@ -35,7 +35,7 @@ public class UserSignInServiceImpl implements IUserSignInService
 
     /**
      * 查询用户签到
-     *
+     * 
      * @param id 用户签到ID
      * @return 用户签到
      */
@@ -47,7 +47,7 @@ public class UserSignInServiceImpl implements IUserSignInService
 
     /**
      * 查询用户签到列表
-     *
+     * 
      * @param userSignIn 用户签到
      * @return 用户签到
      */
@@ -59,7 +59,7 @@ public class UserSignInServiceImpl implements IUserSignInService
 
     /**
      * 新增用户签到
-     *
+     * 
      * @param userSignIn 用户签到
      * @return 结果
      */
@@ -71,7 +71,7 @@ public class UserSignInServiceImpl implements IUserSignInService
 
     /**
      * 修改用户签到
-     *
+     * 
      * @param userSignIn 用户签到
      * @return 结果
      */
@@ -83,7 +83,7 @@ public class UserSignInServiceImpl implements IUserSignInService
 
     /**
      * 删除用户签到对象
-     *
+     * 
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -95,7 +95,7 @@ public class UserSignInServiceImpl implements IUserSignInService
 
     /**
      * 删除用户签到信息
-     *
+     * 
      * @param id 用户签到ID
      * @return 结果
      */
@@ -114,7 +114,7 @@ public class UserSignInServiceImpl implements IUserSignInService
     public AjaxResult signIn(String userId){
 
         //查询今天是否签到
-        String month= DateUtils.parseDateToStr("yyyy-MM",new Date());
+        String month=DateUtils.parseDateToStr("yyyy-MM",new Date());
         String todayStr=DateUtils.getDate();
         UserSignIn today=getByDate(userId,todayStr);
         if(today!=null){
@@ -158,7 +158,7 @@ public class UserSignInServiceImpl implements IUserSignInService
         SysUser user= ShiroUtils.getSysUser();
         user=userService.selectUserById(user.getUserId());
         user.setScore(user.getScore()+Integer.valueOf(score.toString()));
-        int n =userService.updateUser(user);
+        int n =userService.updateUserInfo(user);
         if(n>0){
             ShiroUtils.setSysUser(userService.selectUserById(user.getUserId()));
         }

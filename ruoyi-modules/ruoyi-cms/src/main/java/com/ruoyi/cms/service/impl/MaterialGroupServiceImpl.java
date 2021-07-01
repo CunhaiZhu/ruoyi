@@ -3,9 +3,9 @@ package com.ruoyi.cms.service.impl;
 import java.util.List;
 import java.util.ArrayList;
 import com.ruoyi.common.core.domain.Ztree;
-import com.ruoyi.common.core.utils.DateUtils;
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
-import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.common.utils.DateUtils;
+import com.ruoyi.framework.util.ShiroUtils;
+import com.ruoyi.system.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.MaterialGroupMapper;
@@ -15,19 +15,19 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 素材分组Service业务层处理
- *
+ * 
  * @author wujiyue
  * @date 2019-11-07
  */
 @Service
-public class MaterialGroupServiceImpl implements IMaterialGroupService
+public class MaterialGroupServiceImpl implements IMaterialGroupService 
 {
     @Autowired
     private MaterialGroupMapper materialGroupMapper;
 
     /**
      * 查询素材分组
-     *
+     * 
      * @param groupId 素材分组ID
      * @return 素材分组
      */
@@ -39,7 +39,7 @@ public class MaterialGroupServiceImpl implements IMaterialGroupService
 
     /**
      * 查询素材分组列表
-     *
+     * 
      * @param materialGroup 素材分组
      * @return 素材分组
      */
@@ -51,7 +51,7 @@ public class MaterialGroupServiceImpl implements IMaterialGroupService
 
     /**
      * 新增素材分组
-     *
+     * 
      * @param materialGroup 素材分组
      * @return 结果
      */
@@ -68,7 +68,7 @@ public class MaterialGroupServiceImpl implements IMaterialGroupService
 
     /**
      * 修改素材分组
-     *
+     * 
      * @param materialGroup 素材分组
      * @return 结果
      */
@@ -81,7 +81,7 @@ public class MaterialGroupServiceImpl implements IMaterialGroupService
 
     /**
      * 删除素材分组对象
-     *
+     * 
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -93,7 +93,7 @@ public class MaterialGroupServiceImpl implements IMaterialGroupService
 
     /**
      * 删除素材分组信息
-     *
+     * 
      * @param groupId 素材分组ID
      * @return 结果
      */
@@ -105,7 +105,7 @@ public class MaterialGroupServiceImpl implements IMaterialGroupService
 
     /**
      * 查询素材分组树列表
-     *
+     * 
      * @return 所有素材分组信息
      */
     @Override

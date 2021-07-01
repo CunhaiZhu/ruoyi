@@ -1,13 +1,13 @@
 package com.ruoyi.cms.service;
 
 import com.ruoyi.cms.domain.UserSignIn;
-import com.ruoyi.common.core.web.domain.AjaxResult;
+import com.ruoyi.common.core.domain.AjaxResult;
 
 import java.util.List;
 
 /**
  * 用户签到Service接口
- *
+ * 
  * @author markbro
  * @date 2020-02-03
  */

@@ -5,7 +5,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.Enumeration;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +18,7 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 客户端工具类
- *
+ * 
  * @author ruoyi
  */
 public class ServletUtils
@@ -125,7 +124,7 @@ public class ServletUtils
 
     /**
      * 将字符串渲染到客户端
-     *
+     * 
      * @param response 渲染对象
      * @param string 待渲染的字符串
      * @return null
@@ -148,7 +147,7 @@ public class ServletUtils
 
     /**
      * 是否是Ajax异步请求
-     *
+     * 
      * @param request
      */
     public static boolean isAjaxRequest(HttpServletRequest request)
@@ -181,7 +180,7 @@ public class ServletUtils
 
     /**
      * 内容编码
-     *
+     * 
      * @param str 内容
      * @return 编码后的内容
      */
@@ -199,7 +198,7 @@ public class ServletUtils
 
     /**
      * 内容解码
-     *
+     * 
      * @param str 内容
      * @return 解码后的内容
      */
@@ -213,21 +212,5 @@ public class ServletUtils
         {
             return "";
         }
-    }
-
-    public static Map<String, String> getMap(HttpServletRequest req) {
-        Map<String, String> map=new HashMap<String, String>();
-        Enumeration enu = req.getParameterNames();
-        while(enu.hasMoreElements()) {
-            String paramName = (String)enu.nextElement();
-            String[] paramValues = req.getParameterValues(paramName);
-            if (paramValues.length == 1) {
-                String paramValue = paramValues[0];
-                if (paramValue.length() != 0) {
-                    map.put(paramName, paramValue);
-                }
-            }
-        }
-        return map;
     }
 }

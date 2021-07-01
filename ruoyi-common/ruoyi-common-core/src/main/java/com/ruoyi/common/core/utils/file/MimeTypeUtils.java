@@ -2,7 +2,7 @@ package com.ruoyi.common.core.utils.file;
 
 /**
  * 媒体类型工具类
- *
+ * 
  * @author ruoyi
  */
 public class MimeTypeUtils
@@ -37,36 +37,6 @@ public class MimeTypeUtils
             "mp4", "avi", "rmvb",
             // pdf
             "pdf" };
-    /**
-     * 图片
-     */
-    public static final String MATERIAL_TYPE_IMG="1";
-    /**
-     * 视频
-     */
-    public static final String MATERIAL_TYPE_VIDEO="2";
-    /**
-     * 文本
-     */
-    public static final String MATERIAL_TYPE_TEXT="3";
-    /**
-     * 音频
-     */
-    public static final String MATERIAL_TYPE_AUDIO="4";
-    /**
-     * 压缩
-     */
-    public static final String MATERIAL_TYPE_ZIP="5";
-    /**
-     * 其它
-     */
-    public static final String MATERIAL_TYPE_OTHER="6";
-
-
-    public static final String[] TEXT_EXTENSION = {"doc", "docx", "xls", "xlsx", "ppt", "pptx", "html", "htm", "txt","pdf","ini","java"};
-
-    public static final String[] AUDIO_EXTENSION = {"mp3", "mid", "wav", "wma", "avi"};
-    public static final String[] ZIP_EXTENSION = {"rar", "zip", "gz", "bz2","jar"};
 
     public static String getExtension(String prefix)
     {

@@ -1,14 +1,13 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 链接对象 cms_link
- *
+ * 
  * @author wujiyue
  * @date 2019-11-26
  */
@@ -65,48 +64,48 @@ public class Link extends BaseEntity
     @Excel(name = "状态")
     private Integer status;
 
-    public void setLinkId(Long linkId)
+    public void setLinkId(Long linkId) 
     {
         this.linkId = linkId;
     }
 
-    public Long getLinkId()
+    public Long getLinkId() 
     {
         return linkId;
     }
-    public void setLinkType(String linkType)
+    public void setLinkType(String linkType) 
     {
         this.linkType = linkType;
     }
 
-    public String getLinkType()
+    public String getLinkType() 
     {
         return linkType;
     }
-    public void setLinkName(String linkName)
+    public void setLinkName(String linkName) 
     {
         this.linkName = linkName;
     }
 
-    public String getLinkName()
+    public String getLinkName() 
     {
         return linkName;
     }
-    public void setKeywords(String keywords)
+    public void setKeywords(String keywords) 
     {
         this.keywords = keywords;
     }
 
-    public String getKeywords()
+    public String getKeywords() 
     {
         return keywords;
     }
-    public void setLink(String link)
+    public void setLink(String link) 
     {
         this.link = link;
     }
 
-    public String getLink()
+    public String getLink() 
     {
         return link;
     }
@@ -124,61 +123,61 @@ public class Link extends BaseEntity
         this.logo = logo;
     }
 
-    public String getLogo()
+    public String getLogo() 
     {
         return logo;
     }
-    public void setAuditState(Integer auditState)
+    public void setAuditState(Integer auditState) 
     {
         this.auditState = auditState;
     }
 
-    public Integer getAuditState()
+    public Integer getAuditState() 
     {
         return auditState;
     }
-    public void setDetail(String detail)
+    public void setDetail(String detail) 
     {
         this.detail = detail;
     }
 
-    public String getDetail()
+    public String getDetail() 
     {
         return detail;
     }
-    public void setSort(Long sort)
+    public void setSort(Long sort) 
     {
         this.sort = sort;
     }
 
-    public Long getSort()
+    public Long getSort() 
     {
         return sort;
     }
-    public void setUpVote(Long upVote)
+    public void setUpVote(Long upVote) 
     {
         this.upVote = upVote;
     }
 
-    public Long getUpVote()
+    public Long getUpVote() 
     {
         return upVote;
     }
-    public void setCommentFlag(Integer commentFlag)
+    public void setCommentFlag(Integer commentFlag) 
     {
         this.commentFlag = commentFlag;
     }
 
-    public Integer getCommentFlag()
+    public Integer getCommentFlag() 
     {
         return commentFlag;
     }
-    public void setStatus(Integer status)
+    public void setStatus(Integer status) 
     {
         this.status = status;
     }
 
-    public Integer getStatus()
+    public Integer getStatus() 
     {
         return status;
     }

@@ -1,16 +1,15 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
 
 import java.util.List;
 
 /**
  * 文章管理对象 cms_article
- *
+ * 
  * @author wujiyue
  * @date 2019-10-28
  */
@@ -216,93 +215,93 @@ public class Article extends BaseEntity
     {
         return id;
     }
-    public void setYhid(String yhid)
+    public void setYhid(String yhid) 
     {
         this.yhid = yhid;
     }
 
-    public String getYhid()
+    public String getYhid() 
     {
         return yhid;
     }
-    public void setArticleRegion(String articleRegion)
+    public void setArticleRegion(String articleRegion) 
     {
         this.articleRegion = articleRegion;
     }
 
-    public String getArticleRegion()
+    public String getArticleRegion() 
     {
         return articleRegion;
     }
-    public void setAuthor(String author)
+    public void setAuthor(String author) 
     {
         this.author = author;
     }
 
-    public String getAuthor()
+    public String getAuthor() 
     {
         return author;
     }
-    public void setPublishTime(String publishTime)
+    public void setPublishTime(String publishTime) 
     {
         this.publishTime = publishTime;
     }
 
-    public String getPublishTime()
+    public String getPublishTime() 
     {
         return publishTime;
     }
-    public void setTitle(String title)
+    public void setTitle(String title) 
     {
         this.title = title;
     }
 
-    public String getTitle()
+    public String getTitle() 
     {
         return title;
     }
-    public void setKeywords(String keywords)
+    public void setKeywords(String keywords) 
     {
         this.keywords = keywords;
     }
 
-    public String getKeywords()
+    public String getKeywords() 
     {
         return keywords;
     }
-    public void setDescription(String description)
+    public void setDescription(String description) 
     {
         this.description = description;
     }
 
-    public String getDescription()
+    public String getDescription() 
     {
         return description;
     }
-    public void setCoverImage(String coverImage)
+    public void setCoverImage(String coverImage) 
     {
         this.coverImage = coverImage;
     }
 
-    public String getCoverImage()
+    public String getCoverImage() 
     {
         return coverImage;
     }
-    public void setArticleModel(String articleModel)
+    public void setArticleModel(String articleModel) 
     {
         this.articleModel = articleModel;
     }
 
-    public String getArticleModel()
+    public String getArticleModel() 
     {
         return articleModel;
     }
-    public void setCopyFlag(Integer copyFlag)
+    public void setCopyFlag(Integer copyFlag) 
     {
         this.copyFlag = copyFlag;
     }
 
-    public Integer getCopyFlag()
+    public Integer getCopyFlag() 
     {
         return copyFlag;
     }
@@ -315,93 +314,93 @@ public class Article extends BaseEntity
     {
         return categoryId;
     }
-    public void setPersonalCategory(String personalCategory)
+    public void setPersonalCategory(String personalCategory) 
     {
         this.personalCategory = personalCategory;
     }
 
-    public String getPersonalCategory()
+    public String getPersonalCategory() 
     {
         return personalCategory;
     }
-    public void setLink(String link)
+    public void setLink(String link) 
     {
         this.link = link;
     }
 
-    public String getLink()
+    public String getLink() 
     {
         return link;
     }
-    public void setStaticUrl(String staticUrl)
+    public void setStaticUrl(String staticUrl) 
     {
         this.staticUrl = staticUrl;
     }
 
-    public String getStaticUrl()
+    public String getStaticUrl() 
     {
         return staticUrl;
     }
-    public void setTags(String tags)
+    public void setTags(String tags) 
     {
         this.tags = tags;
     }
 
-    public String getTags()
+    public String getTags() 
     {
         return tags;
     }
-    public void setHit(Long hit)
+    public void setHit(Long hit) 
     {
         this.hit = hit;
     }
 
-    public Long getHit()
+    public Long getHit() 
     {
         return hit;
     }
-    public void setReplyNum(Long replyNum)
+    public void setReplyNum(Long replyNum) 
     {
         this.replyNum = replyNum;
     }
 
-    public Long getReplyNum()
+    public Long getReplyNum() 
     {
         return replyNum;
     }
-    public void setUpVote(Long upVote)
+    public void setUpVote(Long upVote) 
     {
         this.upVote = upVote;
     }
 
-    public Long getUpVote()
+    public Long getUpVote() 
     {
         return upVote;
     }
-    public void setDownVote(Long downVote)
+    public void setDownVote(Long downVote) 
     {
         this.downVote = downVote;
     }
 
-    public Long getDownVote()
+    public Long getDownVote() 
     {
         return downVote;
     }
-    public void setHotFlag(Integer hotFlag)
+    public void setHotFlag(Integer hotFlag) 
     {
         this.hotFlag = hotFlag;
     }
 
-    public Integer getHotFlag()
+    public Integer getHotFlag() 
     {
         return hotFlag;
     }
-    public void setNewFlag(Integer newFlag)
+    public void setNewFlag(Integer newFlag) 
     {
         this.newFlag = newFlag;
     }
 
-    public Integer getNewFlag()
+    public Integer getNewFlag() 
     {
         return newFlag;
     }
@@ -423,75 +422,75 @@ public class Article extends BaseEntity
     {
         return topFlag;
     }
-    public void setFavourite(Long favourite)
+    public void setFavourite(Long favourite) 
     {
         this.favourite = favourite;
     }
 
-    public Long getFavourite()
+    public Long getFavourite() 
     {
         return favourite;
     }
-    public void setMissionId(String missionId)
+    public void setMissionId(String missionId) 
     {
         this.missionId = missionId;
     }
 
-    public String getMissionId()
+    public String getMissionId() 
     {
         return missionId;
     }
-    public void setTemplateName(String templateName)
+    public void setTemplateName(String templateName) 
     {
         this.templateName = templateName;
     }
 
-    public String getTemplateName()
+    public String getTemplateName() 
     {
         return templateName;
     }
-    public void setAvailable(Integer available)
+    public void setAvailable(Integer available) 
     {
         this.available = available;
     }
 
-    public Integer getAvailable()
+    public Integer getAvailable() 
     {
         return available;
     }
-    public void setDeleted(Integer deleted)
+    public void setDeleted(Integer deleted) 
     {
         this.deleted = deleted;
     }
 
-    public Integer getDeleted()
+    public Integer getDeleted() 
     {
         return deleted;
     }
-    public void setExtra1(String extra1)
+    public void setExtra1(String extra1) 
     {
         this.extra1 = extra1;
     }
 
-    public String getExtra1()
+    public String getExtra1() 
     {
         return extra1;
     }
-    public void setExtra2(String extra2)
+    public void setExtra2(String extra2) 
     {
         this.extra2 = extra2;
     }
 
-    public String getExtra2()
+    public String getExtra2() 
     {
         return extra2;
     }
-    public void setExtra3(String extra3)
+    public void setExtra3(String extra3) 
     {
         this.extra3 = extra3;
     }
 
-    public String getExtra3()
+    public String getExtra3() 
     {
         return extra3;
     }

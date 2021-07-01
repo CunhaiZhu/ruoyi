@@ -3,18 +3,12 @@ package com.ruoyi.cms.controller;
 import java.util.Date;
 import java.util.List;
 
-import com.ruoyi.common.core.thread.Global;
-import com.ruoyi.common.core.thread.ServerConfig;
-import com.ruoyi.common.core.utils.Guid;
-import com.ruoyi.common.core.utils.excel.ExcelUtil;
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
-import com.ruoyi.common.core.web.controller.BaseController;
-import com.ruoyi.common.core.web.domain.AjaxResult;
-import com.ruoyi.common.core.web.page.TableDataInfo;
-import com.ruoyi.common.log.annotation.Log;
-import com.ruoyi.common.log.enums.BusinessType;
-import com.ruoyi.file.utils.FileUploadUtils;
-import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.common.config.Global;
+import com.ruoyi.common.config.ServerConfig;
+import com.ruoyi.common.utils.Guid;
+import com.ruoyi.common.utils.file.FileUploadUtils;
+import com.ruoyi.framework.util.ShiroUtils;
+import com.ruoyi.system.domain.SysUser;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,13 +18,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import com.ruoyi.common.annotation.Log;
+import com.ruoyi.common.enums.BusinessType;
 import com.ruoyi.cms.domain.Attachment;
 import com.ruoyi.cms.service.IAttachmentService;
+import com.ruoyi.common.core.controller.BaseController;
+import com.ruoyi.common.core.domain.AjaxResult;
+import com.ruoyi.common.utils.poi.ExcelUtil;
+import com.ruoyi.common.core.page.TableDataInfo;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
  * 附件Controller
- *
+ * 
  * @author wujiyue
  * @date 2019-11-01
  */
@@ -100,7 +100,7 @@ public class AttachmentController extends BaseController
     }
     @PostMapping("/upload")
     @ResponseBody
-    public AjaxResult uploadFile(MultipartFile file, Attachment attachment) throws Exception
+    public AjaxResult uploadFile(MultipartFile file,Attachment attachment) throws Exception
     {
         try
         {

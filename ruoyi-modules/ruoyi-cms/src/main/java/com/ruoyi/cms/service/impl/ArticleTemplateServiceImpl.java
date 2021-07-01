@@ -1,31 +1,32 @@
 package com.ruoyi.cms.service.impl;
 
+import java.util.List;
+
 import cn.hutool.cache.Cache;
 import cn.hutool.cache.CacheUtil;
 import com.google.common.collect.Lists;
-import com.ruoyi.cms.domain.ArticleTemplate;
 import com.ruoyi.cms.domain.Tags;
-import com.ruoyi.cms.mapper.ArticleTemplateMapper;
 import com.ruoyi.cms.mapper.TagsMapper;
-import com.ruoyi.cms.service.IArticleTemplateService;
-import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.core.utils.DateUtils;
-import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
-import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.cms.util.CmsConstants;
+import com.ruoyi.common.utils.DateUtils;
+import com.ruoyi.common.utils.StringUtils;
+import com.ruoyi.framework.util.ShiroUtils;
+import com.ruoyi.system.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import com.ruoyi.cms.mapper.ArticleTemplateMapper;
+import com.ruoyi.cms.domain.ArticleTemplate;
+import com.ruoyi.cms.service.IArticleTemplateService;
+import com.ruoyi.common.core.text.Convert;
 
 /**
  * 文章模板Service业务层处理
- *
+ * 
  * @author markbro
  * @date 2019-12-31
  */
 @Service
-public class ArticleTemplateServiceImpl implements IArticleTemplateService
+public class ArticleTemplateServiceImpl implements IArticleTemplateService 
 {
     @Autowired
     private ArticleTemplateMapper articleTemplateMapper;
@@ -35,7 +36,7 @@ public class ArticleTemplateServiceImpl implements IArticleTemplateService
     private Cache<String, Tags> tagCache= CacheUtil.newLFUCache(100);
     /**
      * 查询文章模板
-     *
+     * 
      * @param id 文章模板ID
      * @return 文章模板
      */
@@ -47,7 +48,7 @@ public class ArticleTemplateServiceImpl implements IArticleTemplateService
 
     /**
      * 查询文章模板列表
-     *
+     * 
      * @param articleTemplate 文章模板
      * @return 文章模板
      */
@@ -62,7 +63,7 @@ public class ArticleTemplateServiceImpl implements IArticleTemplateService
 
     /**
      * 新增文章模板
-     *
+     * 
      * @param articleTemplate 文章模板
      * @return 结果
      */
@@ -79,7 +80,7 @@ public class ArticleTemplateServiceImpl implements IArticleTemplateService
 
     /**
      * 修改文章模板
-     *
+     * 
      * @param articleTemplate 文章模板
      * @return 结果
      */
@@ -91,7 +92,7 @@ public class ArticleTemplateServiceImpl implements IArticleTemplateService
 
     /**
      * 删除文章模板对象
-     *
+     * 
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -103,7 +104,7 @@ public class ArticleTemplateServiceImpl implements IArticleTemplateService
 
     /**
      * 删除文章模板信息
-     *
+     * 
      * @param id 文章模板ID
      * @return 结果
      */

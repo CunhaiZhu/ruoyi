@@ -6,10 +6,10 @@ import com.ruoyi.cms.mapper.CategoryMapper;
 import com.ruoyi.cms.service.ICategoryService;
 import com.ruoyi.common.core.domain.Ztree;
 import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.core.utils.DateUtils;
-import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
-import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.common.utils.DateUtils;
+import com.ruoyi.common.utils.StringUtils;
+import com.ruoyi.framework.util.ShiroUtils;
+import com.ruoyi.system.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,7 +20,7 @@ import java.util.List;
 
 /**
  * 栏目分类Service业务层处理
- *
+ * 
  * @author wujiyue
  * @date 2019-10-28
  */
@@ -32,7 +32,7 @@ public class CategoryServiceImpl implements ICategoryService
 
     /**
      * 查询栏目分类
-     *
+     * 
      * @param categoryId 栏目分类ID
      * @return 栏目分类
      */
@@ -44,7 +44,7 @@ public class CategoryServiceImpl implements ICategoryService
 
     /**
      * 查询栏目分类列表
-     *
+     * 
      * @param category 栏目分类
      * @return 栏目分类
      */
@@ -56,7 +56,7 @@ public class CategoryServiceImpl implements ICategoryService
 
     /**
      * 新增栏目分类
-     *
+     * 
      * @param category 栏目分类
      * @return 结果
      */
@@ -96,7 +96,7 @@ public class CategoryServiceImpl implements ICategoryService
 
     /**
      * 修改栏目分类
-     *
+     * 
      * @param category 栏目分类
      * @return 结果
      */
@@ -111,7 +111,7 @@ public class CategoryServiceImpl implements ICategoryService
 
     /**
      * 删除栏目分类对象
-     *
+     * 
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -123,7 +123,7 @@ public class CategoryServiceImpl implements ICategoryService
 
     /**
      * 删除栏目分类信息
-     *
+     * 
      * @param categoryId 栏目分类ID
      * @return 结果
      */
@@ -135,7 +135,7 @@ public class CategoryServiceImpl implements ICategoryService
 
     /**
      * 查询栏目分类树列表
-     *
+     * 
      * @return 所有栏目分类信息
      */
     @Override

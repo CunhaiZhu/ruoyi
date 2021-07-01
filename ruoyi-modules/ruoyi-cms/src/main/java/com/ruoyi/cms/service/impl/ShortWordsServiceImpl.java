@@ -2,9 +2,8 @@ package com.ruoyi.cms.service.impl;
 
 import java.util.List;
 
-import com.ruoyi.common.core.cms.framework.ShiroUtils;
-import com.ruoyi.system.api.domain.SysUser;
-
+import com.ruoyi.framework.util.ShiroUtils;
+import com.ruoyi.system.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.ShortWordsMapper;
@@ -14,19 +13,19 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 励志短语Service业务层处理
- *
+ * 
  * @author wujiyue
  * @date 2019-11-22
  */
 @Service
-public class ShortWordsServiceImpl implements IShortWordsService
+public class ShortWordsServiceImpl implements IShortWordsService 
 {
     @Autowired
     private ShortWordsMapper shortWordsMapper;
 
     /**
      * 查询励志短语
-     *
+     * 
      * @param id 励志短语ID
      * @return 励志短语
      */
@@ -38,7 +37,7 @@ public class ShortWordsServiceImpl implements IShortWordsService
 
     /**
      * 查询励志短语列表
-     *
+     * 
      * @param shortWords 励志短语
      * @return 励志短语
      */
@@ -50,7 +49,7 @@ public class ShortWordsServiceImpl implements IShortWordsService
 
     /**
      * 新增励志短语
-     *
+     * 
      * @param shortWords 励志短语
      * @return 结果
      */
@@ -65,7 +64,7 @@ public class ShortWordsServiceImpl implements IShortWordsService
 
     /**
      * 修改励志短语
-     *
+     * 
      * @param shortWords 励志短语
      * @return 结果
      */
@@ -78,7 +77,7 @@ public class ShortWordsServiceImpl implements IShortWordsService
 
     /**
      * 删除励志短语对象
-     *
+     * 
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -90,7 +89,7 @@ public class ShortWordsServiceImpl implements IShortWordsService
 
     /**
      * 删除励志短语信息
-     *
+     * 
      * @param id 励志短语ID
      * @return 结果
      */

@@ -1,13 +1,13 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.TreeEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.TreeEntity;
 
 /**
  * 素材分组对象 cms_material_group
- *
+ * 
  * @author wujiyue
  * @date 2019-11-07
  */
@@ -37,57 +37,57 @@ public class MaterialGroup extends TreeEntity
     /** 创建人用户ID */
     private String userId;
 
-    public void setGroupId(Long groupId)
+    public void setGroupId(Long groupId) 
     {
         this.groupId = groupId;
     }
 
-    public Long getGroupId()
+    public Long getGroupId() 
     {
         return groupId;
     }
-    public void setDeptId(String deptId)
+    public void setDeptId(String deptId) 
     {
         this.deptId = deptId;
     }
 
-    public String getDeptId()
+    public String getDeptId() 
     {
         return deptId;
     }
-    public void setGroupName(String groupName)
+    public void setGroupName(String groupName) 
     {
         this.groupName = groupName;
     }
 
-    public String getGroupName()
+    public String getGroupName() 
     {
         return groupName;
     }
-    public void setDescription(String description)
+    public void setDescription(String description) 
     {
         this.description = description;
     }
 
-    public String getDescription()
+    public String getDescription() 
     {
         return description;
     }
-    public void setSort(Integer sort)
+    public void setSort(Integer sort) 
     {
         this.sort = sort;
     }
 
-    public Integer getSort()
+    public Integer getSort() 
     {
         return sort;
     }
-    public void setUserId(String userId)
+    public void setUserId(String userId) 
     {
         this.userId = userId;
     }
 
-    public String getUserId()
+    public String getUserId() 
     {
         return userId;
     }

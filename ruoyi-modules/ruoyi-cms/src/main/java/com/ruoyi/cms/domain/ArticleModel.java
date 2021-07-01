@@ -1,7 +1,7 @@
 package com.ruoyi.cms.domain;
 
 
-import com.ruoyi.common.core.utils.StringUtils;
+import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 文章模型。文章，书籍，书籍章节，链接，图集。

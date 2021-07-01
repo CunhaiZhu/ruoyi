@@ -1,15 +1,15 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.TreeEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.TreeEntity;
 
 import java.util.List;
 
 /**
  * 栏目分类对象 cms_category
- *
+ * 
  * @author wujiyue
  * @date 2019-10-28
  */
@@ -68,48 +68,48 @@ public class Category extends TreeEntity
     {
         return categoryId;
     }
-    public void setCategoryName(String categoryName)
+    public void setCategoryName(String categoryName) 
     {
         this.categoryName = categoryName;
     }
 
-    public String getCategoryName()
+    public String getCategoryName() 
     {
         return categoryName;
     }
-    public void setSort(Integer sort)
+    public void setSort(Integer sort) 
     {
         this.sort = sort;
     }
 
-    public Integer getSort()
+    public Integer getSort() 
     {
         return sort;
     }
-    public void setDescription(String description)
+    public void setDescription(String description) 
     {
         this.description = description;
     }
 
-    public String getDescription()
+    public String getDescription() 
     {
         return description;
     }
-    public void setStatus(Integer status)
+    public void setStatus(Integer status) 
     {
         this.status = status;
     }
 
-    public Integer getStatus()
+    public Integer getStatus() 
     {
         return status;
     }
-    public void setDelFlag(Integer delFlag)
+    public void setDelFlag(Integer delFlag) 
     {
         this.delFlag = delFlag;
     }
 
-    public Integer getDelFlag()
+    public Integer getDelFlag() 
     {
         return delFlag;
     }

@@ -1,8 +1,7 @@
 package com.ruoyi.cms.service.impl;
 
 import java.util.List;
-
-import com.ruoyi.common.core.utils.DateUtils;
+import com.ruoyi.common.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.BlogThemeMapper;
@@ -12,19 +11,19 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 博客主题Service业务层处理
- *
+ * 
  * @author ruoyi
  * @date 2019-12-20
  */
 @Service
-public class BlogThemeServiceImpl implements IBlogThemeService
+public class BlogThemeServiceImpl implements IBlogThemeService 
 {
     @Autowired
     private BlogThemeMapper blogThemeMapper;
 
     /**
      * 查询博客主题
-     *
+     * 
      * @param id 博客主题ID
      * @return 博客主题
      */
@@ -36,7 +35,7 @@ public class BlogThemeServiceImpl implements IBlogThemeService
 
     /**
      * 查询博客主题列表
-     *
+     * 
      * @param blogTheme 博客主题
      * @return 博客主题
      */
@@ -48,7 +47,7 @@ public class BlogThemeServiceImpl implements IBlogThemeService
 
     /**
      * 新增博客主题
-     *
+     * 
      * @param blogTheme 博客主题
      * @return 结果
      */
@@ -61,7 +60,7 @@ public class BlogThemeServiceImpl implements IBlogThemeService
 
     /**
      * 修改博客主题
-     *
+     * 
      * @param blogTheme 博客主题
      * @return 结果
      */
@@ -73,7 +72,7 @@ public class BlogThemeServiceImpl implements IBlogThemeService
 
     /**
      * 删除博客主题对象
-     *
+     * 
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -85,7 +84,7 @@ public class BlogThemeServiceImpl implements IBlogThemeService
 
     /**
      * 删除博客主题信息
-     *
+     * 
      * @param id 博客主题ID
      * @return 结果
      */

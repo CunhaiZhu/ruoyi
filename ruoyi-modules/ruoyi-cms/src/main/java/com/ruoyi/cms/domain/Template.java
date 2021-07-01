@@ -1,13 +1,13 @@
 package com.ruoyi.cms.domain;
 
-import com.ruoyi.common.core.annotation.Excel;
-import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 模板对象 cms_template
- *
+ * 
  * @author wujiyue
  * @date 2019-11-17
  */
@@ -34,48 +34,48 @@ public class Template extends BaseEntity
     @Excel(name = "模板内容")
     private String templateContent;
 
-    public void setTemplateId(Long templateId)
+    public void setTemplateId(Long templateId) 
     {
         this.templateId = templateId;
     }
 
-    public Long getTemplateId()
+    public Long getTemplateId() 
     {
         return templateId;
     }
-    public void setTemplateCode(String templateCode)
+    public void setTemplateCode(String templateCode) 
     {
         this.templateCode = templateCode;
     }
 
-    public String getTemplateCode()
+    public String getTemplateCode() 
     {
         return templateCode;
     }
-    public void setTemplateType(String templateType)
+    public void setTemplateType(String templateType) 
     {
         this.templateType = templateType;
     }
 
-    public String getTemplateType()
+    public String getTemplateType() 
     {
         return templateType;
     }
-    public void setTemplateName(String templateName)
+    public void setTemplateName(String templateName) 
     {
         this.templateName = templateName;
     }
 
-    public String getTemplateName()
+    public String getTemplateName() 
     {
         return templateName;
     }
-    public void setTemplateContent(String templateContent)
+    public void setTemplateContent(String templateContent) 
     {
         this.templateContent = templateContent;
     }
 
-    public String getTemplateContent()
+    public String getTemplateContent() 
     {
         return templateContent;
     }
