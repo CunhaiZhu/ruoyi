@@ -1,13 +1,13 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 资源对象 cms_resource
- * 
+ *
  * @author wujiyue
  * @date 2019-11-23
  */
@@ -137,174 +137,174 @@ public class Resource extends BaseEntity
     }
 
 
-    public void setType(String type) 
+    public void setType(String type)
     {
         this.type = type;
     }
 
-    public String getType() 
+    public String getType()
     {
         return type;
     }
-    public void setDescription(String description) 
+    public void setDescription(String description)
     {
         this.description = description;
     }
 
-    public String getDescription() 
+    public String getDescription()
     {
         return description;
     }
-    public void setDetail(String detail) 
+    public void setDetail(String detail)
     {
         this.detail = detail;
     }
 
-    public String getDetail() 
+    public String getDetail()
     {
         return detail;
     }
-    public void setSize(String size) 
+    public void setSize(String size)
     {
         this.size = size;
     }
 
-    public String getSize() 
+    public String getSize()
     {
         return size;
     }
-    public void setSavePath(String savePath) 
+    public void setSavePath(String savePath)
     {
         this.savePath = savePath;
     }
 
-    public String getSavePath() 
+    public String getSavePath()
     {
         return savePath;
     }
-    public void setCoverImage(String coverImage) 
+    public void setCoverImage(String coverImage)
     {
         this.coverImage = coverImage;
     }
 
-    public String getCoverImage() 
+    public String getCoverImage()
     {
         return coverImage;
     }
-    public void setAuditState(String auditState) 
+    public void setAuditState(String auditState)
     {
         this.auditState = auditState;
     }
 
-    public String getAuditState() 
+    public String getAuditState()
     {
         return auditState;
     }
-    public void setScore(Integer score) 
+    public void setScore(Integer score)
     {
         this.score = score;
     }
 
-    public Integer getScore() 
+    public Integer getScore()
     {
         return score;
     }
-    public void setDownloadType(String downloadType) 
+    public void setDownloadType(String downloadType)
     {
         this.downloadType = downloadType;
     }
 
-    public String getDownloadType() 
+    public String getDownloadType()
     {
         return downloadType;
     }
-    public void setFavouriteCount(Long favouriteCount) 
+    public void setFavouriteCount(Long favouriteCount)
     {
         this.favouriteCount = favouriteCount;
     }
 
-    public Long getFavouriteCount() 
+    public Long getFavouriteCount()
     {
         return favouriteCount;
     }
-    public void setDownloadCount(Long downloadCount) 
+    public void setDownloadCount(Long downloadCount)
     {
         this.downloadCount = downloadCount;
     }
 
-    public Long getDownloadCount() 
+    public Long getDownloadCount()
     {
         return downloadCount;
     }
-    public void setUpVote(Long upVote) 
+    public void setUpVote(Long upVote)
     {
         this.upVote = upVote;
     }
 
-    public Long getUpVote() 
+    public Long getUpVote()
     {
         return upVote;
     }
-    public void setFree(Integer free) 
+    public void setFree(Integer free)
     {
         this.free = free;
     }
 
-    public Integer getFree() 
+    public Integer getFree()
     {
         return free;
     }
-    public void setPayType(String payType) 
+    public void setPayType(String payType)
     {
         this.payType = payType;
     }
 
-    public String getPayType() 
+    public String getPayType()
     {
         return payType;
     }
-    public void setCost(Long cost) 
+    public void setCost(Long cost)
     {
         this.cost = cost;
     }
 
-    public Long getCost() 
+    public Long getCost()
     {
         return cost;
     }
-    public void setTagIds(String tagIds) 
+    public void setTagIds(String tagIds)
     {
         this.tagIds = tagIds;
     }
 
-    public String getTagIds() 
+    public String getTagIds()
     {
         return tagIds;
     }
-    public void setUserId(String userId) 
+    public void setUserId(String userId)
     {
         this.userId = userId;
     }
 
-    public String getUserId() 
+    public String getUserId()
     {
         return userId;
     }
-    public void setUserName(String userName) 
+    public void setUserName(String userName)
     {
         this.userName = userName;
     }
 
-    public String getUserName() 
+    public String getUserName()
     {
         return userName;
     }
-    public void setStatus(Integer status) 
+    public void setStatus(Integer status)
     {
         this.status = status;
     }
 
-    public Integer getStatus() 
+    public Integer getStatus()
     {
         return status;
     }

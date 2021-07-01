@@ -6,18 +6,20 @@ import com.ruoyi.cms.service.CmsService;
 import com.ruoyi.cms.service.IAttachmentService;
 import com.ruoyi.cms.service.IPvService;
 import com.ruoyi.cms.service.PVQueueService;
-import com.ruoyi.common.annotation.Log;
-import com.ruoyi.common.config.Global;
-import com.ruoyi.common.config.ServerConfig;
-import com.ruoyi.common.core.controller.BaseController;
-import com.ruoyi.common.core.domain.AjaxResult;
+
 import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.enums.BusinessType;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.file.FileUploadUtils;
-import com.ruoyi.common.utils.file.MimeTypeUtils;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
+
+import com.ruoyi.common.core.thread.Global;
+import com.ruoyi.common.core.thread.ServerConfig;
+import com.ruoyi.common.core.utils.StringUtils;
+import com.ruoyi.common.core.utils.file.MimeTypeUtils;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.common.core.web.controller.BaseController;
+import com.ruoyi.common.core.web.domain.AjaxResult;
+import com.ruoyi.common.log.annotation.Log;
+import com.ruoyi.common.log.enums.BusinessType;
+import com.ruoyi.file.utils.FileUploadUtils;
+import com.ruoyi.system.api.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -50,7 +52,7 @@ public class CmsController extends BaseController {
      */
     @PostMapping("/cms/uploadAttach")
     @ResponseBody
-    public AjaxResult uploadAttach(@RequestParam("zid") String zid,String sort, MultipartFile file) throws Exception
+    public AjaxResult uploadAttach(@RequestParam("zid") String zid, String sort, MultipartFile file) throws Exception
     {
         try
         {
@@ -66,7 +68,7 @@ public class CmsController extends BaseController {
                 sortNum=Integer.valueOf(sort);
             }catch (Exception ex){}
             attachment.setSort(sortNum);
-            String suffix=FileUploadUtils.getExtension(file);
+            String suffix= FileUploadUtils.getExtension(file);
             String fileType= MimeTypeUtils.MATERIAL_TYPE_OTHER;//文件类型-其它
             if(FileUploadUtils.isImage(suffix)){
                 fileType=MimeTypeUtils.MATERIAL_TYPE_IMG;

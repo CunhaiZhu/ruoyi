@@ -9,10 +9,10 @@ import com.ruoyi.cms.domain.Template;
 import com.ruoyi.cms.service.ITemplateService;
 import com.ruoyi.cms.util.email.MailSenderInfo;
 import com.ruoyi.cms.util.email.SimpleMailSender;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.Guid;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
+import com.ruoyi.common.core.utils.DateUtils;
+import com.ruoyi.common.core.utils.Guid;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.system.api.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.EmailMapper;
@@ -22,12 +22,12 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 邮件Service业务层处理
- * 
+ *
  * @author wujiyue
  * @date 2019-11-04
  */
 @Service
-public class EmailServiceImpl implements IEmailService 
+public class EmailServiceImpl implements IEmailService
 {
     @Autowired
     private EmailMapper emailMapper;
@@ -35,7 +35,7 @@ public class EmailServiceImpl implements IEmailService
     private ITemplateService templateService;
     /**
      * 查询邮件
-     * 
+     *
      * @param id 邮件ID
      * @return 邮件
      */
@@ -47,7 +47,7 @@ public class EmailServiceImpl implements IEmailService
 
     /**
      * 查询邮件列表
-     * 
+     *
      * @param email 邮件
      * @return 邮件
      */
@@ -59,7 +59,7 @@ public class EmailServiceImpl implements IEmailService
 
     /**
      * 新增邮件
-     * 
+     *
      * @param email 邮件
      * @return 结果
      */
@@ -67,7 +67,7 @@ public class EmailServiceImpl implements IEmailService
     public int insertEmail(Email email)
     {
         email.setId(Guid.get());
-        SysUser user=ShiroUtils.getSysUser();
+        SysUser user= ShiroUtils.getSysUser();
         email.setFromEmail(CmsConfig.getFromEmail());
         email.setFromEmailPwd(CmsConfig.getFromEmailPwd());
         email.setUserId(user.getUserId().toString());
@@ -90,7 +90,7 @@ public class EmailServiceImpl implements IEmailService
 
     /**
      * 修改邮件
-     * 
+     *
      * @param email 邮件
      * @return 结果
      */
@@ -113,7 +113,7 @@ public class EmailServiceImpl implements IEmailService
 
     /**
      * 删除邮件对象
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -125,7 +125,7 @@ public class EmailServiceImpl implements IEmailService
 
     /**
      * 删除邮件信息
-     * 
+     *
      * @param id 邮件ID
      * @return 结果
      */

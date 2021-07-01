@@ -1,7 +1,11 @@
 package com.ruoyi.file.utils;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+
+import com.ruoyi.common.core.constant.Constants;
+import com.ruoyi.common.core.thread.Global;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.web.multipart.MultipartFile;
 import com.ruoyi.common.core.exception.file.FileNameLengthLimitExceededException;
@@ -14,7 +18,7 @@ import com.ruoyi.common.core.utils.file.MimeTypeUtils;
 
 /**
  * 文件上传工具类
- * 
+ *
  * @author ruoyi
  */
 public class FileUploadUtils
@@ -47,6 +51,121 @@ public class FileUploadUtils
         {
             throw new IOException(e.getMessage(), e);
         }
+    }
+
+    /**
+     * 是否图片
+     * @param suffix
+     * @return
+     */
+    public static final boolean isImage(String suffix){
+        for (String str : MimeTypeUtils.IMAGE_EXTENSION)
+        {
+            if (str.equalsIgnoreCase(suffix))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static final boolean isText(String suffix){
+        for (String str : MimeTypeUtils.TEXT_EXTENSION)
+        {
+            if (str.equalsIgnoreCase(suffix))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static final boolean isVideo(String suffix){
+        for (String str : MimeTypeUtils.VIDEO_EXTENSION)
+        {
+            if (str.equalsIgnoreCase(suffix))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static final boolean isAudio(String suffix){
+        for (String str : MimeTypeUtils.AUDIO_EXTENSION)
+        {
+            if (str.equalsIgnoreCase(suffix))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static final boolean isZip(String suffix){
+        for (String str : MimeTypeUtils.ZIP_EXTENSION)
+        {
+            if (str.equalsIgnoreCase(suffix))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 获取图片宽度
+     * @param file  图片文件
+     * @return 宽度
+     */
+    public static int getImgWidth(MultipartFile file) {
+        String suffix=  getExtension(file);
+        if(!isImage(suffix)){
+            return 0;
+        }
+        BufferedImage src = null;
+        int ret = -1;
+        try {
+            src = javax.imageio.ImageIO.read(file.getInputStream());
+            ret = src.getWidth(null); // 得到源图宽
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ret;
+    }
+
+
+    /**
+     * 获取图片高度
+     * @param file  图片文件
+     * @return 高度
+     */
+    public static int getImgHeight(MultipartFile file) {
+        String suffix=  getExtension(file);
+        if(!isImage(suffix)){
+            return 0;
+        }
+        BufferedImage src = null;
+        int ret = -1;
+        try {
+            src = javax.imageio.ImageIO.read(file.getInputStream());
+            ret = src.getHeight(null); // 得到源图高
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ret;
+    }
+
+    /**
+     * 删除素材文件
+     * @param fileName  /profile/material/2019/11/06/f4395e7b74fe673893ffd7d2f317dbdc.png
+     * @return
+     */
+    public static final boolean deleteFile(String fileName) throws Exception{
+        File target=  getAbsoluteFile(Global.getProfile(),fileName.replace(Constants.RESOURCE_PREFIX,""));
+        if(target.exists()&&target.isFile()){
+            target.delete();
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -180,7 +299,7 @@ public class FileUploadUtils
 
     /**
      * 获取文件名的后缀
-     * 
+     *
      * @param file 表单文件
      * @return 后缀名
      */

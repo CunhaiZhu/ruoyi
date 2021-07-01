@@ -1,13 +1,14 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
+
 
 /**
  * PV对象 cms_pv
- * 
+ *
  * @author wujiyue
  * @date 2019-11-29
  */
@@ -61,111 +62,111 @@ public class Pv extends BaseEntity
     @Excel(name = "地址")
     private String location;
 
-    public void setId(Long id) 
+    public void setId(Long id)
     {
         this.id = id;
     }
 
-    public Long getId() 
+    public Long getId()
     {
         return id;
     }
-    public void setUid(String uid) 
+    public void setUid(String uid)
     {
         this.uid = uid;
     }
 
-    public String getUid() 
+    public String getUid()
     {
         return uid;
     }
-    public void setModule(String module) 
+    public void setModule(String module)
     {
         this.module = module;
     }
 
-    public String getModule() 
+    public String getModule()
     {
         return module;
     }
-    public void setBrowser(String browser) 
+    public void setBrowser(String browser)
     {
         this.browser = browser;
     }
 
-    public String getBrowser() 
+    public String getBrowser()
     {
         return browser;
     }
-    public void setReferer(String referer) 
+    public void setReferer(String referer)
     {
         this.referer = referer;
     }
 
-    public String getReferer() 
+    public String getReferer()
     {
         return referer;
     }
-    public void setOs(String os) 
+    public void setOs(String os)
     {
         this.os = os;
     }
 
-    public String getOs() 
+    public String getOs()
     {
         return os;
     }
-    public void setPageId(String pageId) 
+    public void setPageId(String pageId)
     {
         this.pageId = pageId;
     }
 
-    public String getPageId() 
+    public String getPageId()
     {
         return pageId;
     }
-    public void setUrl(String url) 
+    public void setUrl(String url)
     {
         this.url = url;
     }
 
-    public String getUrl() 
+    public String getUrl()
     {
         return url;
     }
-    public void setDeviceType(String deviceType) 
+    public void setDeviceType(String deviceType)
     {
         this.deviceType = deviceType;
     }
 
-    public String getDeviceType() 
+    public String getDeviceType()
     {
         return deviceType;
     }
-    public void setTimeZone(String timeZone) 
+    public void setTimeZone(String timeZone)
     {
         this.timeZone = timeZone;
     }
 
-    public String getTimeZone() 
+    public String getTimeZone()
     {
         return timeZone;
     }
-    public void setIp(String ip) 
+    public void setIp(String ip)
     {
         this.ip = ip;
     }
 
-    public String getIp() 
+    public String getIp()
     {
         return ip;
     }
-    public void setLocation(String location) 
+    public void setLocation(String location)
     {
         this.location = location;
     }
 
-    public String getLocation() 
+    public String getLocation()
     {
         return location;
     }

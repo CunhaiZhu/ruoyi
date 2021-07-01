@@ -1,7 +1,8 @@
 package com.ruoyi.cms.service.impl;
 
 import java.util.List;
-import com.ruoyi.common.utils.DateUtils;
+
+import com.ruoyi.common.core.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.CommentMapper;
@@ -11,19 +12,19 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 评论Service业务层处理
- * 
+ *
  * @author wujiyue
  * @date 2019-11-19
  */
 @Service
-public class CommentServiceImpl implements ICommentService 
+public class CommentServiceImpl implements ICommentService
 {
     @Autowired
     private CommentMapper commentMapper;
 
     /**
      * 查询评论
-     * 
+     *
      * @param id 评论ID
      * @return 评论
      */
@@ -35,7 +36,7 @@ public class CommentServiceImpl implements ICommentService
 
     /**
      * 查询评论列表
-     * 
+     *
      * @param comment 评论
      * @return 评论
      */
@@ -52,7 +53,7 @@ public class CommentServiceImpl implements ICommentService
 
     /**
      * 新增评论
-     * 
+     *
      * @param comment 评论
      * @return 结果
      */
@@ -65,7 +66,7 @@ public class CommentServiceImpl implements ICommentService
 
     /**
      * 修改评论
-     * 
+     *
      * @param comment 评论
      * @return 结果
      */
@@ -78,7 +79,7 @@ public class CommentServiceImpl implements ICommentService
 
     /**
      * 删除评论对象
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -90,7 +91,7 @@ public class CommentServiceImpl implements ICommentService
 
     /**
      * 删除评论信息
-     * 
+     *
      * @param id 评论ID
      * @return 结果
      */

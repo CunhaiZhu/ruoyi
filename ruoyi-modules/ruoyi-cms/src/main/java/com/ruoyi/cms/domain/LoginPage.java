@@ -1,13 +1,13 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 登录页面对象 cms_login_page
- * 
+ *
  * @author wujiyue
  * @date 2019-12-24
  */
@@ -30,39 +30,39 @@ public class LoginPage extends BaseEntity
     @Excel(name = "封面图片")
     private String coverImg;
 
-    public void setId(Long id) 
+    public void setId(Long id)
     {
         this.id = id;
     }
 
-    public Long getId() 
+    public Long getId()
     {
         return id;
     }
-    public void setName(String name) 
+    public void setName(String name)
     {
         this.name = name;
     }
 
-    public String getName() 
+    public String getName()
     {
         return name;
     }
-    public void setCode(String code) 
+    public void setCode(String code)
     {
         this.code = code;
     }
 
-    public String getCode() 
+    public String getCode()
     {
         return code;
     }
-    public void setCoverImg(String coverImg) 
+    public void setCoverImg(String coverImg)
     {
         this.coverImg = coverImg;
     }
 
-    public String getCoverImg() 
+    public String getCoverImg()
     {
         return coverImg;
     }

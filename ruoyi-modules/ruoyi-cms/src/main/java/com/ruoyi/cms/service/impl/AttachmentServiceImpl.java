@@ -1,10 +1,11 @@
 package com.ruoyi.cms.service.impl;
 
 import java.util.List;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.Guid;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
+
+import com.ruoyi.common.core.utils.DateUtils;
+import com.ruoyi.common.core.utils.Guid;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.system.api.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.AttachmentMapper;
@@ -14,19 +15,19 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 附件Service业务层处理
- * 
+ *
  * @author wujiyue
  * @date 2019-11-01
  */
 @Service
-public class AttachmentServiceImpl implements IAttachmentService 
+public class AttachmentServiceImpl implements IAttachmentService
 {
     @Autowired
     private AttachmentMapper attachmentMapper;
 
     /**
      * 查询附件
-     * 
+     *
      * @param attachId 附件ID
      * @return 附件
      */
@@ -45,7 +46,7 @@ public class AttachmentServiceImpl implements IAttachmentService
 
     /**
      * 查询附件列表
-     * 
+     *
      * @param attachment 附件
      * @return 附件
      */
@@ -57,7 +58,7 @@ public class AttachmentServiceImpl implements IAttachmentService
 
     /**
      * 新增附件
-     * 
+     *
      * @param attachment 附件
      * @return 结果
      */
@@ -74,7 +75,7 @@ public class AttachmentServiceImpl implements IAttachmentService
 
     /**
      * 修改附件
-     * 
+     *
      * @param attachment 附件
      * @return 结果
      */
@@ -87,7 +88,7 @@ public class AttachmentServiceImpl implements IAttachmentService
 
     /**
      * 删除附件对象
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -99,7 +100,7 @@ public class AttachmentServiceImpl implements IAttachmentService
 
     /**
      * 删除附件信息
-     * 
+     *
      * @param attachId 附件ID
      * @return 结果
      */

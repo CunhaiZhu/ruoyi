@@ -1,13 +1,13 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 广告位对象 cms_ad
- * 
+ *
  * @author wujiyue
  * @date 2019-11-16
  */
@@ -47,84 +47,84 @@ public class Ad extends BaseEntity
     /** 描述 */
     private String description;
 
-    public void setAdId(Long adId) 
+    public void setAdId(Long adId)
     {
         this.adId = adId;
     }
 
-    public Long getAdId() 
+    public Long getAdId()
     {
         return adId;
     }
-    public void setAdCode(String adCode) 
+    public void setAdCode(String adCode)
     {
         this.adCode = adCode;
     }
 
-    public String getAdCode() 
+    public String getAdCode()
     {
         return adCode;
     }
-    public void setAdName(String adName) 
+    public void setAdName(String adName)
     {
         this.adName = adName;
     }
 
-    public String getAdName() 
+    public String getAdName()
     {
         return adName;
     }
-    public void setWidth(Integer width) 
+    public void setWidth(Integer width)
     {
         this.width = width;
     }
 
-    public Integer getWidth() 
+    public Integer getWidth()
     {
         return width;
     }
-    public void setHeight(Integer height) 
+    public void setHeight(Integer height)
     {
         this.height = height;
     }
 
-    public Integer getHeight() 
+    public Integer getHeight()
     {
         return height;
     }
-    public void setStatus(Integer status) 
+    public void setStatus(Integer status)
     {
         this.status = status;
     }
 
-    public Integer getStatus() 
+    public Integer getStatus()
     {
         return status;
     }
-    public void setUserId(String userId) 
+    public void setUserId(String userId)
     {
         this.userId = userId;
     }
 
-    public String getUserId() 
+    public String getUserId()
     {
         return userId;
     }
-    public void setDeptId(String deptId) 
+    public void setDeptId(String deptId)
     {
         this.deptId = deptId;
     }
 
-    public String getDeptId() 
+    public String getDeptId()
     {
         return deptId;
     }
-    public void setDescription(String description) 
+    public void setDescription(String description)
     {
         this.description = description;
     }
 
-    public String getDescription() 
+    public String getDescription()
     {
         return description;
     }

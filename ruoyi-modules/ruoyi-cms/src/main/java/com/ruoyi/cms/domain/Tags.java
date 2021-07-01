@@ -1,13 +1,14 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
+
 
 /**
  * 标签管理对象 cms_tags
- * 
+ *
  * @author wujiyue
  * @date 2019-10-29
  */
@@ -71,61 +72,61 @@ public class Tags extends BaseEntity
         this.tagId = tagId;
     }
 
-    public Long getTagId() 
+    public Long getTagId()
     {
         return tagId;
     }
-    public void setTagType(String tagType) 
+    public void setTagType(String tagType)
     {
         this.tagType = tagType;
     }
 
-    public String getTagType() 
+    public String getTagType()
     {
         return tagType;
     }
-    public void setUserId(String userId) 
+    public void setUserId(String userId)
     {
         this.userId = userId;
     }
 
-    public String getUserId() 
+    public String getUserId()
     {
         return userId;
     }
-    public void setTagName(String tagName) 
+    public void setTagName(String tagName)
     {
         this.tagName = tagName;
     }
 
-    public String getTagName() 
+    public String getTagName()
     {
         return tagName;
     }
-    public void setSort(Long sort) 
+    public void setSort(Long sort)
     {
         this.sort = sort;
     }
 
-    public Long getSort() 
+    public Long getSort()
     {
         return sort;
     }
-    public void setStatus(Integer status) 
+    public void setStatus(Integer status)
     {
         this.status = status;
     }
 
-    public Integer getStatus() 
+    public Integer getStatus()
     {
         return status;
     }
-    public void setUrl(String url) 
+    public void setUrl(String url)
     {
         this.url = url;
     }
 
-    public String getUrl() 
+    public String getUrl()
     {
         return url;
     }

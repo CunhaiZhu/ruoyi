@@ -3,9 +3,8 @@ package com.ruoyi.cms.service;
 import cn.hutool.core.collection.CollectionUtil;
 import com.google.common.collect.Queues;
 import com.ruoyi.cms.domain.Pv;
-import com.ruoyi.common.utils.IpUtils;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.common.utils.useragent.UserAgentUtils;
+import com.ruoyi.common.core.utils.ip.IpUtils;
+import com.ruoyi.common.core.utils.StringUtils;
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.DeviceType;
 import org.apache.logging.log4j.LogManager;
@@ -19,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
+import com.ruoyi.common.core.utils.useragent.UserAgentUtils;
 
 @Component("pvQueueService")
 public class PVQueueService implements InitializingBean {

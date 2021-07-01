@@ -1,14 +1,15 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
+
 import java.util.Date;
 
 /**
  * 素材对象 cms_material
- * 
+ *
  * @author wujiyue
  * @date 2019-11-05
  */
@@ -91,7 +92,7 @@ public class Material extends BaseEntity
     public void setParamMaterialIds(String[] paramMaterialIds) {
         this.paramMaterialIds = paramMaterialIds;
     }*/
-    public void setMaterialId(String materialId) 
+    public void setMaterialId(String materialId)
     {
         this.materialId = materialId;
     }
@@ -108,129 +109,129 @@ public class Material extends BaseEntity
     {
         return materialId;
     }
-    public void setGroupId(String groupId) 
+    public void setGroupId(String groupId)
     {
         this.groupId = groupId;
     }
 
-    public String getGroupId() 
+    public String getGroupId()
     {
         return groupId;
     }
-    public void setMaterialName(String materialName) 
+    public void setMaterialName(String materialName)
     {
         this.materialName = materialName;
     }
 
-    public String getMaterialName() 
+    public String getMaterialName()
     {
         return materialName;
     }
-    public void setMaterialType(String materialType) 
+    public void setMaterialType(String materialType)
     {
         this.materialType = materialType;
     }
 
-    public String getMaterialType() 
+    public String getMaterialType()
     {
         return materialType;
     }
-    public void setDescription(String description) 
+    public void setDescription(String description)
     {
         this.description = description;
     }
 
-    public String getDescription() 
+    public String getDescription()
     {
         return description;
     }
-    public void setMaterialSize(String materialSize) 
+    public void setMaterialSize(String materialSize)
     {
         this.materialSize = materialSize;
     }
 
-    public String getMaterialSize() 
+    public String getMaterialSize()
     {
         return materialSize;
     }
-    public void setSavePath(String savePath) 
+    public void setSavePath(String savePath)
     {
         this.savePath = savePath;
     }
 
-    public String getSavePath() 
+    public String getSavePath()
     {
         return savePath;
     }
-    public void setThumbnail(String thumbnail) 
+    public void setThumbnail(String thumbnail)
     {
         this.thumbnail = thumbnail;
     }
 
-    public String getThumbnail() 
+    public String getThumbnail()
     {
         return thumbnail;
     }
-    public void setAuditState(String auditState) 
+    public void setAuditState(String auditState)
     {
         this.auditState = auditState;
     }
 
-    public String getAuditState() 
+    public String getAuditState()
     {
         return auditState;
     }
-    public void setAuditReason(String auditReason) 
+    public void setAuditReason(String auditReason)
     {
         this.auditReason = auditReason;
     }
 
-    public String getAuditReason() 
+    public String getAuditReason()
     {
         return auditReason;
     }
-    public void setUseState(String useState) 
+    public void setUseState(String useState)
     {
         this.useState = useState;
     }
 
-    public String getUseState() 
+    public String getUseState()
     {
         return useState;
     }
-    public void setWidth(String width) 
+    public void setWidth(String width)
     {
         this.width = width;
     }
 
-    public String getWidth() 
+    public String getWidth()
     {
         return width;
     }
-    public void setHeight(String height) 
+    public void setHeight(String height)
     {
         this.height = height;
     }
 
-    public String getHeight() 
+    public String getHeight()
     {
         return height;
     }
-    public void setUploaderId(String uploaderId) 
+    public void setUploaderId(String uploaderId)
     {
         this.uploaderId = uploaderId;
     }
 
-    public String getUploaderId() 
+    public String getUploaderId()
     {
         return uploaderId;
     }
-    public void setUploadTime(Date uploadTime) 
+    public void setUploadTime(Date uploadTime)
     {
         this.uploadTime = uploadTime;
     }
 
-    public Date getUploadTime() 
+    public Date getUploadTime()
     {
         return uploadTime;
     }

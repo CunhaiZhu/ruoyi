@@ -1,13 +1,13 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 励志短语对象 cms_short_words
- * 
+ *
  * @author wujiyue
  * @date 2019-11-22
  */
@@ -42,66 +42,66 @@ public class ShortWords extends BaseEntity
     @Excel(name = "审核状态")
     private Integer auditState;
 
-    public void setId(Long id) 
+    public void setId(Long id)
     {
         this.id = id;
     }
 
-    public Long getId() 
+    public Long getId()
     {
         return id;
     }
-    public void setShortWords(String shortWords) 
+    public void setShortWords(String shortWords)
     {
         this.shortWords = shortWords;
     }
 
-    public String getShortWords() 
+    public String getShortWords()
     {
         return shortWords;
     }
-    public void setTagids(String tagids) 
+    public void setTagids(String tagids)
     {
         this.tagids = tagids;
     }
 
-    public String getTagids() 
+    public String getTagids()
     {
         return tagids;
     }
-    public void setUserId(String userId) 
+    public void setUserId(String userId)
     {
         this.userId = userId;
     }
 
-    public String getUserId() 
+    public String getUserId()
     {
         return userId;
     }
-    public void setWordsCount(Long wordsCount) 
+    public void setWordsCount(Long wordsCount)
     {
         this.wordsCount = wordsCount;
     }
 
-    public Long getWordsCount() 
+    public Long getWordsCount()
     {
         return wordsCount;
     }
-    public void setWeight(Long weight) 
+    public void setWeight(Long weight)
     {
         this.weight = weight;
     }
 
-    public Long getWeight() 
+    public Long getWeight()
     {
         return weight;
     }
-    public void setAuditState(Integer auditState) 
+    public void setAuditState(Integer auditState)
     {
         this.auditState = auditState;
     }
 
-    public Integer getAuditState() 
+    public Integer getAuditState()
     {
         return auditState;
     }

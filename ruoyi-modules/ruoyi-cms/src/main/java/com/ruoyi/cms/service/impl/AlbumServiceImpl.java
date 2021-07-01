@@ -10,12 +10,12 @@ import com.ruoyi.cms.mapper.AlbumMapper;
 import com.ruoyi.cms.mapper.MaterialMapper;
 import com.ruoyi.cms.service.IAlbumService;
 import com.ruoyi.cms.util.CmsConstants;
-import com.ruoyi.common.annotation.DataScope;
 import com.ruoyi.common.core.text.Convert;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.Guid;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
+import com.ruoyi.common.core.utils.DateUtils;
+import com.ruoyi.common.core.utils.Guid;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.common.datascope.annotation.DataScope;
+import com.ruoyi.system.api.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,7 +26,7 @@ import java.util.Map;
 
 /**
  * 素材相册Service业务层处理
- * 
+ *
  * @author wujiyue
  * @date 2019-11-08
  */
@@ -40,7 +40,7 @@ public class AlbumServiceImpl implements IAlbumService
     private MaterialMapper materialMapper;
     /**
      * 查询素材专辑
-     * 
+     *
      * @param albumId 素材专辑ID
      * @return 素材专辑
      */
@@ -52,7 +52,7 @@ public class AlbumServiceImpl implements IAlbumService
 
     /**
      * 查询素材专辑列表
-     * 
+     *
      * @param album 素材专辑
      * @return 素材专辑
      */
@@ -65,7 +65,7 @@ public class AlbumServiceImpl implements IAlbumService
 
     /**
      * 新增素材专辑
-     * 
+     *
      * @param album 素材专辑
      * @return 结果
      */
@@ -83,7 +83,7 @@ public class AlbumServiceImpl implements IAlbumService
 
     /**
      * 修改素材专辑
-     * 
+     *
      * @param album 素材专辑
      * @return 结果
      */
@@ -96,7 +96,7 @@ public class AlbumServiceImpl implements IAlbumService
 
     /**
      * 删除素材专辑对象
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -108,7 +108,7 @@ public class AlbumServiceImpl implements IAlbumService
 
     /**
      * 删除素材专辑信息
-     * 
+     *
      * @param albumId 素材专辑ID
      * @return 结果
      */

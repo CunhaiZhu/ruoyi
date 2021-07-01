@@ -5,11 +5,11 @@ import java.util.List;
 
 import com.ruoyi.cms.domain.MaterialUse;
 import com.ruoyi.cms.util.CmsConstants;
-import com.ruoyi.common.annotation.DataScope;
-import com.ruoyi.common.utils.Guid;
-import com.ruoyi.common.utils.file.FileUploadUtils;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
+import com.ruoyi.common.core.utils.Guid;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.common.datascope.annotation.DataScope;
+import com.ruoyi.file.utils.FileUploadUtils;
+import com.ruoyi.system.api.domain.SysUser;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,19 +21,19 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 素材Service业务层处理
- * 
+ *
  * @author wujiyue
  * @date 2019-11-05
  */
 @Service
-public class MaterialServiceImpl implements IMaterialService 
+public class MaterialServiceImpl implements IMaterialService
 {
     @Autowired
     private MaterialMapper materialMapper;
 
     /**
      * 查询素材
-     * 
+     *
      * @param materialId 素材ID
      * @return 素材
      */
@@ -45,7 +45,7 @@ public class MaterialServiceImpl implements IMaterialService
 
     /**
      * 查询素材列表
-     * 
+     *
      * @param material 素材
      * @return 素材
      */
@@ -53,7 +53,7 @@ public class MaterialServiceImpl implements IMaterialService
     @DataScope(deptAlias = "b",userAlias = "b")
     public List<Material> selectMaterialList(Material material)
     {
-        SysUser user=ShiroUtils.getSysUser();
+        SysUser user= ShiroUtils.getSysUser();
         if(!user.isAdmin()){
             //不是管理员只能查询该部门及以下分组的素材
             material.setDeptId(user.getDeptId());
@@ -63,7 +63,7 @@ public class MaterialServiceImpl implements IMaterialService
 
     /**
      * 新增素材
-     * 
+     *
      * @param material 素材
      * @return 结果
      */
@@ -81,7 +81,7 @@ public class MaterialServiceImpl implements IMaterialService
 
     /**
      * 修改素材
-     * 
+     *
      * @param material 素材
      * @return 结果
      */
@@ -93,7 +93,7 @@ public class MaterialServiceImpl implements IMaterialService
 
     /**
      * 删除素材对象
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -118,7 +118,7 @@ public class MaterialServiceImpl implements IMaterialService
 
     /**
      * 删除素材信息
-     * 
+     *
      * @param materialId 素材ID
      * @return 结果
      */

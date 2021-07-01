@@ -1,10 +1,11 @@
 package com.ruoyi.cms.service.impl;
 
 import java.util.List;
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.Guid;
-import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysUser;
+
+import com.ruoyi.common.core.utils.DateUtils;
+import com.ruoyi.common.core.utils.Guid;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
+import com.ruoyi.system.api.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.ResourceMapper;
@@ -14,19 +15,19 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 资源Service业务层处理
- * 
+ *
  * @author wujiyue
  * @date 2019-11-23
  */
 @Service
-public class ResourceServiceImpl implements IResourceService 
+public class ResourceServiceImpl implements IResourceService
 {
     @Autowired
     private ResourceMapper resourceMapper;
 
     /**
      * 查询资源
-     * 
+     *
      * @param id 资源ID
      * @return 资源
      */
@@ -38,7 +39,7 @@ public class ResourceServiceImpl implements IResourceService
 
     /**
      * 查询资源列表
-     * 
+     *
      * @param resource 资源
      * @return 资源
      */
@@ -50,7 +51,7 @@ public class ResourceServiceImpl implements IResourceService
 
     /**
      * 新增资源
-     * 
+     *
      * @param resource 资源
      * @return 结果
      */
@@ -68,7 +69,7 @@ public class ResourceServiceImpl implements IResourceService
 
     /**
      * 修改资源
-     * 
+     *
      * @param resource 资源
      * @return 结果
      */
@@ -81,7 +82,7 @@ public class ResourceServiceImpl implements IResourceService
 
     /**
      * 删除资源对象
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -93,7 +94,7 @@ public class ResourceServiceImpl implements IResourceService
 
     /**
      * 删除资源信息
-     * 
+     *
      * @param id 资源ID
      * @return 结果
      */

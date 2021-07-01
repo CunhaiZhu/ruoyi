@@ -4,11 +4,11 @@ import java.util.List;
 
 import cn.hutool.cache.Cache;
 import cn.hutool.cache.CacheUtil;
-import com.alibaba.fastjson.JSONArray;
 import com.google.common.collect.Lists;
 import com.ruoyi.cms.util.CmsConstants;
-import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.ehcache.util.EhCacheUtils;
+
+import com.ruoyi.common.core.cms.EhCacheUtils;
+import com.ruoyi.common.core.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.cms.mapper.TagsMapper;
@@ -18,12 +18,12 @@ import com.ruoyi.common.core.text.Convert;
 
 /**
  * 标签管理Service业务层处理
- * 
+ *
  * @author wujiyue
  * @date 2019-10-29
  */
 @Service
-public class TagsServiceImpl implements ITagsService 
+public class TagsServiceImpl implements ITagsService
 {
     @Autowired
     private TagsMapper tagsMapper;
@@ -31,7 +31,7 @@ public class TagsServiceImpl implements ITagsService
     private static Cache<String,Tags> tagsCache= CacheUtil.newLRUCache(1000,1000*60*60);
     /**
      * 查询标签管理
-     * 
+     *
      * @param tagId 标签管理ID
      * @return 标签管理
      */
@@ -53,7 +53,7 @@ public class TagsServiceImpl implements ITagsService
 
     /**
      * 查询标签管理列表
-     * 
+     *
      * @param tags 标签管理
      * @return 标签管理
      */
@@ -65,7 +65,7 @@ public class TagsServiceImpl implements ITagsService
 
     /**
      * 新增标签管理
-     * 
+     *
      * @param tags 标签管理
      * @return 结果
      */
@@ -77,7 +77,7 @@ public class TagsServiceImpl implements ITagsService
 
     /**
      * 修改标签管理
-     * 
+     *
      * @param tags 标签管理
      * @return 结果
      */
@@ -89,7 +89,7 @@ public class TagsServiceImpl implements ITagsService
 
     /**
      * 删除标签管理对象
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -101,7 +101,7 @@ public class TagsServiceImpl implements ITagsService
 
     /**
      * 删除标签管理信息
-     * 
+     *
      * @param tagId 标签管理ID
      * @return 结果
      */

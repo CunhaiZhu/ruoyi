@@ -2,22 +2,22 @@ package com.ruoyi.cms.service;
 
 import com.ruoyi.cms.domain.Article;
 import com.ruoyi.cms.domain.ArticleRegionType;
-import com.ruoyi.common.core.domain.AjaxResult;
+import com.ruoyi.common.core.web.domain.AjaxResult;
 
 import java.util.List;
 import java.util.Map;
 
 /**
  * 文章管理Service接口
- * 
+ *
  * @author wujiyue
  * @date 2019-10-28
  */
-public interface IArticleService 
+public interface IArticleService
 {
     /**
      * 查询文章管理
-     * 
+     *
      * @param id 文章管理ID
      * @return 文章管理
      */
@@ -25,7 +25,7 @@ public interface IArticleService
 
     /**
      * 查询文章管理列表
-     * 
+     *
      * @param article 文章管理
      * @return 文章管理集合
      */
@@ -33,7 +33,7 @@ public interface IArticleService
 
     /**
      * 新增文章管理
-     * 
+     *
      * @param article 文章管理
      * @return 结果
      */
@@ -41,7 +41,7 @@ public interface IArticleService
 
     /**
      * 修改文章管理
-     * 
+     *
      * @param article 文章管理
      * @return 结果
      */
@@ -49,7 +49,7 @@ public interface IArticleService
 
     /**
      * 批量删除文章管理
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */
@@ -57,7 +57,7 @@ public interface IArticleService
 
     /**
      * 删除文章管理信息
-     * 
+     *
      * @param id 文章管理ID
      * @return 结果
      */

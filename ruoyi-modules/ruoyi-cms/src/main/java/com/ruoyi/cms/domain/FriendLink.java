@@ -1,13 +1,11 @@
 package com.ruoyi.cms.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 
 /**
  * 友情链接对象 cms_friend_link
- * 
+ *
  * @author wujiyue
  * @date 2019-11-16
  */
@@ -49,25 +47,25 @@ public class FriendLink extends BaseEntity
         this.id = id;
     }
 
-    public Long getId() 
+    public Long getId()
     {
         return id;
     }
-    public void setName(String name) 
+    public void setName(String name)
     {
         this.name = name;
     }
 
-    public String getName() 
+    public String getName()
     {
         return name;
     }
-    public void setLink(String link) 
+    public void setLink(String link)
     {
         this.link = link;
     }
 
-    public String getLink() 
+    public String getLink()
     {
         return link;
     }
@@ -93,7 +91,7 @@ public class FriendLink extends BaseEntity
         this.auditState = auditState;
     }
 
-    public Integer getAuditState() 
+    public Integer getAuditState()
     {
         return auditState;
     }

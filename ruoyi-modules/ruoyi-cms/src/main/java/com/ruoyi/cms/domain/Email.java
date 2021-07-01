@@ -1,14 +1,15 @@
 package com.ruoyi.cms.domain;
 
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.web.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
+
 import java.util.Date;
 
 /**
  * 邮件对象 cms_email
- * 
+ *
  * @author wujiyue
  * @date 2019-11-04
  */
@@ -80,84 +81,84 @@ public class Email extends BaseEntity
     {
         return id;
     }
-    public void setEmailType(Integer emailType) 
+    public void setEmailType(Integer emailType)
     {
         this.emailType = emailType;
     }
 
-    public Integer getEmailType() 
+    public Integer getEmailType()
     {
         return emailType;
     }
-    public void setUserId(String userId) 
+    public void setUserId(String userId)
     {
         this.userId = userId;
     }
 
-    public String getUserId() 
+    public String getUserId()
     {
         return userId;
     }
-    public void setFromEmail(String fromEmail) 
+    public void setFromEmail(String fromEmail)
     {
         this.fromEmail = fromEmail;
     }
 
-    public String getFromEmail() 
+    public String getFromEmail()
     {
         return fromEmail;
     }
-    public void setFromEmailPwd(String fromEmailPwd) 
+    public void setFromEmailPwd(String fromEmailPwd)
     {
         this.fromEmailPwd = fromEmailPwd;
     }
 
-    public String getFromEmailPwd() 
+    public String getFromEmailPwd()
     {
         return fromEmailPwd;
     }
-    public void setToEmail(String toEmail) 
+    public void setToEmail(String toEmail)
     {
         this.toEmail = toEmail;
     }
 
-    public String getToEmail() 
+    public String getToEmail()
     {
         return toEmail;
     }
-    public void setSubject(String subject) 
+    public void setSubject(String subject)
     {
         this.subject = subject;
     }
 
-    public String getSubject() 
+    public String getSubject()
     {
         return subject;
     }
-    public void setContent(String content) 
+    public void setContent(String content)
     {
         this.content = content;
     }
 
-    public String getContent() 
+    public String getContent()
     {
         return content;
     }
-    public void setSendFlag(Integer sendFlag) 
+    public void setSendFlag(Integer sendFlag)
     {
         this.sendFlag = sendFlag;
     }
 
-    public Integer getSendFlag() 
+    public Integer getSendFlag()
     {
         return sendFlag;
     }
-    public void setSendTime(Date sendTime) 
+    public void setSendTime(Date sendTime)
     {
         this.sendTime = sendTime;
     }
 
-    public Date getSendTime() 
+    public Date getSendTime()
     {
         return sendTime;
     }
@@ -179,21 +180,21 @@ public class Email extends BaseEntity
     {
         return planTime;
     }
-    public void setCopyTo(String copyTo) 
+    public void setCopyTo(String copyTo)
     {
         this.copyTo = copyTo;
     }
 
-    public String getCopyTo() 
+    public String getCopyTo()
     {
         return copyTo;
     }
-    public void setAttachfiles(String attachfiles) 
+    public void setAttachfiles(String attachfiles)
     {
         this.attachfiles = attachfiles;
     }
 
-    public String getAttachfiles() 
+    public String getAttachfiles()
     {
         return attachfiles;
     }

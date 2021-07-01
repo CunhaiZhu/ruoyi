@@ -16,7 +16,7 @@ import com.ruoyi.common.core.web.domain.BaseEntity;
 
 /**
  * 用户对象 sys_user
- * 
+ *
  * @author ruoyi
  */
 public class SysUser extends BaseEntity
@@ -90,6 +90,8 @@ public class SysUser extends BaseEntity
 
     /** 岗位组 */
     private Long[] postIds;
+
+    private Integer score;
 
     public SysUser()
     {
@@ -297,7 +299,15 @@ public class SysUser extends BaseEntity
     {
         this.postIds = postIds;
     }
-    
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
+    }
+
     @Override
     public String toString() {
         return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
