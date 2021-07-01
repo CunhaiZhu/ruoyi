@@ -3,7 +3,7 @@ package com.ruoyi.cms.controller;
 import java.util.List;
 
 import com.ruoyi.common.core.utils.excel.ExcelUtil;
-import com.ruoyi.cms.util.framework.ShiroUtils;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
 import com.ruoyi.common.core.web.controller.BaseController;
 
 import com.ruoyi.common.core.web.domain.AjaxResult;

@@ -1,4 +1,4 @@
-package com.ruoyi.cms.util.framework;
+package com.ruoyi.common.core.cms.framework;
 
 import com.ruoyi.auth.service.SysLoginService;
 import com.ruoyi.common.core.cms.exception.RoleBlockedException;

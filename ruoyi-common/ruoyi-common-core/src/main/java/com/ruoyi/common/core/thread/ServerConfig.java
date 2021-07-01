@@ -1,4 +1,4 @@
-package com.ruoyi.common.core.cms.thread;
+package com.ruoyi.common.core.thread;
 
 import com.ruoyi.common.core.utils.ServletUtils;
 import org.springframework.stereotype.Component;

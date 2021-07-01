@@ -2,8 +2,6 @@ package com.ruoyi.common.security.aspect;
 
 import java.lang.reflect.Method;
 import java.util.Collection;
-
-import com.ruoyi.system.api.model.LoginUser;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -17,10 +15,11 @@ import com.ruoyi.common.core.exception.PreAuthorizeException;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.common.security.annotation.PreAuthorize;
 import com.ruoyi.common.security.service.TokenService;
+import com.ruoyi.system.api.model.LoginUser;
 
 /**
  * 自定义权限实现
- *
+ * 
  * @author ruoyi
  */
 @Aspect
@@ -105,7 +104,7 @@ public class PreAuthorizeAspect
 
     /**
      * 验证用户是否具备某权限
-     *
+     * 
      * @param permission 权限字符串
      * @return 用户是否具备某权限
      */
@@ -156,7 +155,7 @@ public class PreAuthorizeAspect
 
     /**
      * 判断用户是否拥有某个角色
-     *
+     * 
      * @param role 角色字符串
      * @return 用户是否具备某角色
      */
@@ -213,7 +212,7 @@ public class PreAuthorizeAspect
 
     /**
      * 判断是否包含权限
-     *
+     * 
      * @param authorities 权限列表
      * @param permission 权限字符串
      * @return 用户是否具备某权限

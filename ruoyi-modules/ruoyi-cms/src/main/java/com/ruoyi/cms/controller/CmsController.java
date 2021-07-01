@@ -7,18 +7,18 @@ import com.ruoyi.cms.service.IAttachmentService;
 import com.ruoyi.cms.service.IPvService;
 import com.ruoyi.cms.service.PVQueueService;
 
-import com.ruoyi.common.core.cms.FileUploadUtils;
 import com.ruoyi.common.core.text.Convert;
 
-import com.ruoyi.common.core.cms.thread.Global;
-import com.ruoyi.common.core.cms.thread.ServerConfig;
+import com.ruoyi.common.core.thread.Global;
+import com.ruoyi.common.core.thread.ServerConfig;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.common.core.utils.file.MimeTypeUtils;
-import com.ruoyi.cms.util.framework.ShiroUtils;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
 import com.ruoyi.common.core.web.controller.BaseController;
 import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.common.log.annotation.Log;
 import com.ruoyi.common.log.enums.BusinessType;
+import com.ruoyi.file.utils.FileUploadUtils;
 import com.ruoyi.system.api.domain.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

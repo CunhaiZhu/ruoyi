@@ -5,7 +5,7 @@ package com.ruoyi.common.core.cms.exception;
  *
  * @author ruoyi
  */
-public class UserPasswordRetryLimitCountException extends UserException
+public class UserPasswordRetryLimitCountException extends com.ruoyi.common.exception.user.UserException
 {
     private static final long serialVersionUID = 1L;
 

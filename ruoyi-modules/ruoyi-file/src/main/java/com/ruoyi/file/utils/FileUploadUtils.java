@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 import com.ruoyi.common.core.constant.Constants;
-import com.ruoyi.common.core.cms.thread.Global;
+import com.ruoyi.common.core.thread.Global;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.web.multipart.MultipartFile;
 import com.ruoyi.common.core.exception.file.FileNameLengthLimitExceededException;

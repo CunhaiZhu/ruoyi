@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 import cn.hutool.core.date.DateUtil;
 import com.ruoyi.common.core.utils.DateUtils;
-import com.ruoyi.cms.util.framework.ShiroUtils;
+import com.ruoyi.common.core.cms.framework.ShiroUtils;
 import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.service.ISysUserService;
