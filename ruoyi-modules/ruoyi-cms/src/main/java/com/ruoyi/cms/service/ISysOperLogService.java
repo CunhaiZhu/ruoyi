@@ -1,6 +1,7 @@
 package com.ruoyi.cms.service;
 
-import com.ruoyi.system.api.domain.SysOperLog;
+
+import com.ruoyi.cms.plus.cloud.SysOperLog;
 
 import java.util.List;
 

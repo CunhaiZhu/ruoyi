@@ -327,25 +327,4 @@ public class SysRoleServiceImpl implements ISysRoleService
         roleDeptMapper.deleteRoleDept(roleIds);
         return roleMapper.deleteRoleByIds(roleIds);
     }
-
-    /**
-     * 根据用户ID查询权限
-     *
-     * @param userId 用户ID
-     * @return 权限列表
-     */
-    @Override
-    public Set<String> selectPermsByUserId(Long userId)
-    {
-        List<String> perms = roleMapper.selectPermsByUserId(userId);
-        Set<String> permsSet = new HashSet<>();
-        for (String perm : perms)
-        {
-            if (StringUtils.isNotEmpty(perm))
-            {
-                permsSet.addAll(Arrays.asList(perm.trim().split(",")));
-            }
-        }
-        return permsSet;
-    }
 }

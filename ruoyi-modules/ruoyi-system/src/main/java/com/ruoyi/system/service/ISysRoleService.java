@@ -129,12 +129,4 @@ public interface ISysRoleService
      * @return 结果
      */
     public int deleteRoleByIds(Long[] roleIds);
-
-    /**
-     * 根据用户ID查询权限
-     *
-     * @param userId 用户ID
-     * @return 权限列表
-     */
-    public Set<String> selectPermsByUserId(Long userId);
 }

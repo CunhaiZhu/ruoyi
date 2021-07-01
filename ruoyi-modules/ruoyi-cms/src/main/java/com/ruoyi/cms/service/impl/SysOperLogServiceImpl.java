@@ -1,8 +1,8 @@
 package com.ruoyi.cms.service.impl;
 
 import com.ruoyi.cms.mapper.SysCmsOperLogMapper;
+import com.ruoyi.cms.plus.cloud.SysOperLog;
 import com.ruoyi.cms.service.ISysOperLogService;
-import com.ruoyi.system.api.domain.SysOperLog;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
