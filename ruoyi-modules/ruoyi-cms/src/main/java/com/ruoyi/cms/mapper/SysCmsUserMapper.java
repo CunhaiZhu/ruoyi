@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
 import com.ruoyi.system.api.domain.SysUser;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Mapper
 public interface SysCmsUserMapper
 {
     /**

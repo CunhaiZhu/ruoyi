@@ -2,20 +2,22 @@ package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.Album;
 import com.ruoyi.cms.domain.AlbumMaterial;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 /**
  * 相册Mapper接口
- * 
+ *
  * @author wujiyue
  * @date 2019-11-08
  */
-public interface AlbumMapper 
+@Mapper
+public interface AlbumMapper
 {
     /**
      * 查询专辑
-     * 
+     *
      * @param albumId 专辑ID
      * @return 专辑
      */
@@ -31,7 +33,7 @@ public interface AlbumMapper
 
     /**
      * 查询专辑列表
-     * 
+     *
      * @param album 专辑
      * @return 专辑集合
      */
@@ -39,7 +41,7 @@ public interface AlbumMapper
 
     /**
      * 新增专辑
-     * 
+     *
      * @param album 专辑
      * @return 结果
      */
@@ -60,7 +62,7 @@ public interface AlbumMapper
     public int insertAlbumMaterialBatch(List<AlbumMaterial> albumMaterials);
     /**
      * 修改专辑
-     * 
+     *
      * @param album 专辑
      * @return 结果
      */
@@ -68,7 +70,7 @@ public interface AlbumMapper
 
     /**
      * 删除专辑
-     * 
+     *
      * @param albumId 专辑ID
      * @return 结果
      */
@@ -76,7 +78,7 @@ public interface AlbumMapper
 
     /**
      * 批量删除专辑
-     * 
+     *
      * @param albumIds 需要删除的数据ID
      * @return 结果
      */

@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.Tags;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-10-29
  */
+@Mapper
 public interface TagsMapper
 {
     /**

@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.Pv;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-29
  */
+@Mapper
 public interface PvMapper
 {
     /**

@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.Filetype;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.Map;
  * @author wujiyue
  * @date 2019-11-01
  */
+@Mapper
 public interface FiletypeMapper
 {
     /**

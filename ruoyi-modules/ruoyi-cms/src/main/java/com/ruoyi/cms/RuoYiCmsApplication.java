@@ -17,8 +17,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableCustomConfig
 @EnableCustomSwagger2
 @EnableRyFeignClients
-@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
-@MapperScan("com.ruoyi,cms")
+@SpringBootApplication
 public class RuoYiCmsApplication {
     public static void main(String[] args)
     {

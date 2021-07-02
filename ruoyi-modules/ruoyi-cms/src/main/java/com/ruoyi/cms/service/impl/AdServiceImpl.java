@@ -7,7 +7,7 @@ import com.ruoyi.cms.domain.MaterialUse;
 import com.ruoyi.cms.mapper.AdMapper;
 import com.ruoyi.cms.mapper.MaterialMapper;
 import com.ruoyi.cms.plus.utils.ShiroUtils;
-import com.ruoyi.cms.service.IAdService;
+import com.ruoyi.cms.service.AdService;
 import com.ruoyi.cms.util.CmsConstants;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.DateUtils;
@@ -25,7 +25,7 @@ import java.util.List;
  * @date 2019-11-16
  */
 @Service
-public class AdServiceImpl implements IAdService
+public class AdServiceImpl implements AdService
 {
     @Resource
     private AdMapper adMapper;

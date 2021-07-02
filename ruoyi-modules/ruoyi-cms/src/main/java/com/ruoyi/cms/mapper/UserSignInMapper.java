@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.UserSignIn;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
  * @author markbro
  * @date 2020-02-03
  */
+@Mapper
 public interface UserSignInMapper
 {
     /**

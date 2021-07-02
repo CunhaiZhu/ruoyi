@@ -1,9 +1,8 @@
 package com.ruoyi.cms.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.ruoyi.cms.domain.Ad;
 import com.ruoyi.cms.domain.AdMaterial;
-import com.ruoyi.cms.domain.Album;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -13,6 +12,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-16
  */
+@Mapper
 public interface AdMapper
 {
     /**

@@ -3,7 +3,7 @@ package com.ruoyi.cms.controller;
 import com.ruoyi.cms.domain.Ad;
 import com.ruoyi.cms.domain.AdMaterial;
 import com.ruoyi.cms.plus.utils.ExcelUtil;
-import com.ruoyi.cms.service.IAdService;
+import com.ruoyi.cms.service.AdService;
 import com.ruoyi.common.core.web.controller.BaseController;
 import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.common.core.web.page.TableDataInfo;
@@ -11,7 +11,6 @@ import com.ruoyi.common.log.annotation.Log;
 import com.ruoyi.common.log.enums.BusinessType;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,7 +29,7 @@ public class AdController extends BaseController
     private String prefix = "cms/ad";
 
     @Autowired
-    private IAdService adService;
+    private AdService adService;
 
     @RequiresPermissions("cms:ad:view")
     @GetMapping()

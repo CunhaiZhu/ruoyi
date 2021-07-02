@@ -3,6 +3,7 @@ package com.ruoyi.cms.mapper;
 
 
 import com.ruoyi.cms.plus.cloud.SysRoleMenu;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Mapper
 public interface SysCmsRoleMenuMapper
 {
     /**

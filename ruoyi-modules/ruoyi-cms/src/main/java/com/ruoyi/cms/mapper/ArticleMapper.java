@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.Article;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -8,15 +9,16 @@ import java.util.Map;
 
 /**
  * 文章管理Mapper接口
- * 
+ *
  * @author wujiyue
  * @date 2019-10-28
  */
-public interface ArticleMapper 
+@Mapper
+public interface ArticleMapper
 {
     /**
      * 查询文章
-     * 
+     *
      * @param id 文章ID
      * @return 文章
      */
@@ -30,7 +32,7 @@ public interface ArticleMapper
     public Map<String,Object> getArticleContent(String article_id);
     /**
      * 查询文章列表
-     * 
+     *
      * @param article 文章
      * @return 文章集合
      */
@@ -70,7 +72,7 @@ public interface ArticleMapper
     public int insertArticleContent(Article article);
     /**
      * 修改文章
-     * 
+     *
      * @param article 文章
      * @return 结果
      */
@@ -84,7 +86,7 @@ public interface ArticleMapper
     public int updateArticleContent(Article article);
     /**
      * 删除文章
-     * 
+     *
      * @param id 文章ID
      * @return 结果
      */
@@ -97,7 +99,7 @@ public interface ArticleMapper
     public int deleteArticleContentById(String id);
     /**
      * 批量删除文章
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */

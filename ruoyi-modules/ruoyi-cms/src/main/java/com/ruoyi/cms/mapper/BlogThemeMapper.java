@@ -1,6 +1,7 @@
 package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.BlogTheme;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @author ruoyi
  * @date 2019-12-20
  */
+@Mapper
 public interface BlogThemeMapper
 {
     /**

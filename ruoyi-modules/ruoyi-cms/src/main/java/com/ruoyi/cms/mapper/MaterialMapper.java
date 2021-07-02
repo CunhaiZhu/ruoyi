@@ -3,6 +3,7 @@ package com.ruoyi.cms.mapper;
 import com.ruoyi.cms.domain.AlbumMaterial;
 import com.ruoyi.cms.domain.Material;
 import com.ruoyi.cms.domain.MaterialUse;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-05
  */
+@Mapper
 public interface MaterialMapper
 {
     /**

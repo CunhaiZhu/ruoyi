@@ -1,5 +1,7 @@
 package com.ruoyi.cms.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.Map;
 
 /**
@@ -8,6 +10,7 @@ import java.util.Map;
  * @author wujiyue
  * @date 2019-11-17
  */
+@Mapper
 public interface WebSiteMapper
 {
     /**

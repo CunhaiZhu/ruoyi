@@ -2,6 +2,7 @@ package com.ruoyi.cms.mapper;
 
 
 import com.ruoyi.cms.plus.SysDictData;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
  *
  * @author ruoyi
  */
+@Mapper
 public interface SysCmsDictDataMapper
 {
     /**

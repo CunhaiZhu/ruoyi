@@ -2,20 +2,22 @@ package com.ruoyi.cms.mapper;
 
 import com.ruoyi.cms.domain.Article;
 import com.ruoyi.cms.domain.Category;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 /**
  * 栏目分类Mapper接口
- * 
+ *
  * @author wujiyue
  * @date 2019-10-28
  */
-public interface CategoryMapper 
+@Mapper
+public interface CategoryMapper
 {
     /**
      * 查询栏目分类
-     * 
+     *
      * @param categoryId 栏目分类ID
      * @return 栏目分类
      */
@@ -23,7 +25,7 @@ public interface CategoryMapper
 
     /**
      * 查询栏目分类列表
-     * 
+     *
      * @param category 栏目分类
      * @return 栏目分类集合
      */
@@ -31,7 +33,7 @@ public interface CategoryMapper
 
     /**
      * 新增栏目分类
-     * 
+     *
      * @param category 栏目分类
      * @return 结果
      */
@@ -39,7 +41,7 @@ public interface CategoryMapper
 
     /**
      * 修改栏目分类
-     * 
+     *
      * @param category 栏目分类
      * @return 结果
      */
@@ -47,7 +49,7 @@ public interface CategoryMapper
 
     /**
      * 删除栏目分类
-     * 
+     *
      * @param categoryId 栏目分类ID
      * @return 结果
      */
@@ -55,7 +57,7 @@ public interface CategoryMapper
 
     /**
      * 批量删除栏目分类
-     * 
+     *
      * @param categoryIds 需要删除的数据ID
      * @return 结果
      */
