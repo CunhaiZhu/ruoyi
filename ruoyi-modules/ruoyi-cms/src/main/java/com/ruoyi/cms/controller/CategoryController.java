@@ -24,7 +24,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-10-28
  */
-@Controller
+@RestController
 @RequestMapping("/cms/category")
 public class CategoryController extends BaseController
 {

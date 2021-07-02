@@ -21,7 +21,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-29
  */
-@Controller
+@RestController
 @RequestMapping("/cms/pv")
 public class PvController extends BaseController
 {

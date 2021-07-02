@@ -22,7 +22,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-12-24
  */
-@Controller
+@RestController
 @RequestMapping("/cms/loginPage")
 public class LoginPageController extends BaseController
 {

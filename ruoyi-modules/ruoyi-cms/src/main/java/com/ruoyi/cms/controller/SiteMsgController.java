@@ -21,7 +21,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-17
  */
-@Controller
+@RestController
 @RequestMapping("/cms/siteMsg")
 public class SiteMsgController extends BaseController
 {

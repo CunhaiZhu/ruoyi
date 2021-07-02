@@ -4,10 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.ruoyi.cms.plus.Global;
 import com.ruoyi.cms.plus.utils.FileUploadUtils;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +18,7 @@ import java.util.Map;
  *@author 林钊全
  *@date 2020/9/5
  */
-@Controller
+@RestController
 @RequestMapping("/ajax/libs/ueditor/1.4.3")
 public class UeditorController {
 

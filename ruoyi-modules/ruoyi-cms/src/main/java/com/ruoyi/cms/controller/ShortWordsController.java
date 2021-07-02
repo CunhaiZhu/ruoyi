@@ -22,7 +22,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-22
  */
-@Controller
+@RestController
 @RequestMapping("/cms/shortWords")
 public class ShortWordsController extends BaseController
 {

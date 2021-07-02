@@ -22,7 +22,7 @@ import java.util.List;
  * @author ruoyi
  * @date 2019-12-20
  */
-@Controller
+@RestController
 @RequestMapping("/cms/blogTheme")
 public class BlogThemeController extends BaseController
 {

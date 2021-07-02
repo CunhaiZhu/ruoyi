@@ -27,7 +27,7 @@ import java.util.Map;
  * @author wujiyue
  * @date 2019-11-23
  */
-@Controller
+@RestController
 @RequestMapping("/cms/resource")
 public class ResourceController extends BaseController
 {

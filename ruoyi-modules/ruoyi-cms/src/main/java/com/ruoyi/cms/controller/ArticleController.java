@@ -46,7 +46,7 @@ import java.util.Map;
  * @author wujiyue
  * @date 2019-10-28
  */
-@Controller
+@RestController
 @RequestMapping("/cms/article")
 public class ArticleController extends BaseController
 {

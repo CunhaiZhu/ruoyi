@@ -22,7 +22,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-19
  */
-@Controller
+@RestController
 @RequestMapping("/cms/comment")
 public class CommentController extends BaseController
 {

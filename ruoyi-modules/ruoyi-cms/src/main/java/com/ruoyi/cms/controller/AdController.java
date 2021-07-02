@@ -23,7 +23,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-16
  */
-@Controller
+@RestController
 @RequestMapping("/cms/ad")
 public class AdController extends BaseController
 {

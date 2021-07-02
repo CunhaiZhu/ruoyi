@@ -25,7 +25,7 @@ import java.util.List;
  * @author markbro
  * @date 2019-12-31
  */
-@Controller
+@RestController
 @RequestMapping("/cms/articleTemplate")
 public class ArticleTemplateController extends BaseController
 {

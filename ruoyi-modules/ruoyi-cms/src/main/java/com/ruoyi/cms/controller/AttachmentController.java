@@ -30,7 +30,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-01
  */
-@Controller
+@RestController
 @RequestMapping("/cms/attachment")
 public class AttachmentController extends BaseController
 {

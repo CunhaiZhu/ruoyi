@@ -22,7 +22,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-01
  */
-@Controller
+@RestController
 @RequestMapping("/cms/filetype")
 public class FiletypeController extends BaseController
 {

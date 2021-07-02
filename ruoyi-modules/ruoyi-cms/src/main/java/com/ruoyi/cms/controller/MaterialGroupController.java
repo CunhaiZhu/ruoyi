@@ -23,7 +23,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-07
  */
-@Controller
+@RestController
 @RequestMapping("/cms/materialGroup")
 public class MaterialGroupController extends BaseController
 {

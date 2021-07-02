@@ -22,7 +22,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-10-29
  */
-@Controller
+@RestController
 @RequestMapping("/cms/tags")
 public class TagsController extends BaseController
 {

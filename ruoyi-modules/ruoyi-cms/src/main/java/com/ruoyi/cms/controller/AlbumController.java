@@ -26,7 +26,7 @@ import java.util.Map;
  * @author wujiyue
  * @date 2019-11-08
  */
-@Controller
+@RestController
 @RequestMapping("/cms/album")
 public class AlbumController extends BaseController
 {

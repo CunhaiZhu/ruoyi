@@ -24,7 +24,7 @@ import java.util.List;
  * @author markbro
  * @date 2020-02-03
  */
-@Controller
+@RestController
 @RequestMapping("/cms/userSignIn")
 public class UserSignInController extends BaseController
 {

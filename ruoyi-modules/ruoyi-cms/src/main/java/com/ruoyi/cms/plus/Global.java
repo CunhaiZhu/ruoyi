@@ -89,7 +89,7 @@ public class Global
      */
     public static String getVersion()
     {
-        return StringUtils.nvl(version, "4.0.0");
+        return StringUtils.nvl(version, "3.0.0");
     }
 
     /**
