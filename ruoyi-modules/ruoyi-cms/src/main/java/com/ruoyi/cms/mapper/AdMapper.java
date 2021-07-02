@@ -1,7 +1,9 @@
 package com.ruoyi.cms.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.ruoyi.cms.domain.Ad;
 import com.ruoyi.cms.domain.AdMaterial;
+import com.ruoyi.cms.domain.Album;
 
 import java.util.List;
 

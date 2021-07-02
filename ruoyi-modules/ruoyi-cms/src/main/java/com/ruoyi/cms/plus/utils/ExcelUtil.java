@@ -1,9 +1,9 @@
 package com.ruoyi.cms.plus.utils;
 
 import com.ruoyi.cms.plus.Global;
-import com.ruoyi.cms.plus.annotation.Excel;
-import com.ruoyi.cms.plus.annotation.Excels;
 import com.ruoyi.cms.plus.exception.BusinessException;
+import com.ruoyi.common.core.annotation.Excel;
+import com.ruoyi.common.core.annotation.Excels;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.DateUtils;
 import com.ruoyi.common.core.utils.reflect.ReflectUtils;
