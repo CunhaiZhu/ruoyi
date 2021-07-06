@@ -9,6 +9,7 @@ import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.common.core.web.page.TableDataInfo;
 import com.ruoyi.common.log.annotation.Log;
 import com.ruoyi.common.log.enums.BusinessType;
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
@@ -22,6 +23,7 @@ import java.util.List;
  * @author wujiyue
  * @date 2019-11-16
  */
+@Api(tags = "广告位Controller")
 @RestController
 @RequestMapping("/cms/ad")
 public class AdController extends BaseController
