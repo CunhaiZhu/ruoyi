@@ -89,10 +89,13 @@ public class Material extends BaseEntity
     private String uploaderId;
 
     /** 上传日期 */
+    @ApiParam("上传日期")
     @Excel(name = "上传日期", width = 30, dateFormat = "yyyy-MM-dd")
     private Date uploadTime;
    // private String[] paramMaterialIds;//扩展字段
-    public String albumId;//扩展字段
+    /** 专辑id */
+    @ApiParam("专辑id")
+    private String albumId;//扩展字段
 
     public String getAlbumId() {
         return albumId;
@@ -259,6 +262,10 @@ public class Material extends BaseEntity
 
     public void setGroupName(String groupName) {
         this.groupName = groupName;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     @Override
