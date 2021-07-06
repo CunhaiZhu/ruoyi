@@ -1,5 +1,7 @@
 package com.ruoyi.cms.domain;
 
+import io.swagger.annotations.ApiParam;
+
 import java.util.Date;
 
 /**
@@ -7,20 +9,28 @@ import java.util.Date;
  */
 public class AdMaterial extends Material{
     /*主键*/
+    @ApiParam("主键")
     private Integer id;
     /*广告位ID*/
+    @ApiParam("广告位ID")
     private Integer adId;
     /*链接*/
+    @ApiParam("链接")
     private String link;
     /*排序*/
+    @ApiParam("排序")
     private int sort;
     /*点击数*/
+    @ApiParam("点击数")
     private int hit;
     /*开始时间*/
+    @ApiParam("开始时间")
     private Date startTime;
     /*结束时间*/
+    @ApiParam("结束时间")
     private Date endTime;
     /*状态*/
+    @ApiParam("状态")
     private int status;
     private int useHisId;
 

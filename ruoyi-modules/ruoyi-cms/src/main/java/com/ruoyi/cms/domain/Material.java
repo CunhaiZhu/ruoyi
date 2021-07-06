@@ -2,6 +2,7 @@ package com.ruoyi.cms.domain;
 
 import com.ruoyi.common.core.annotation.Excel;
 import com.ruoyi.common.core.web.domain.BaseEntity;
+import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -18,57 +19,73 @@ public class Material extends BaseEntity
     private static final long serialVersionUID = 1L;
 
     /** ID */
+    @ApiParam("ID")
     private String materialId;
 
     /** 分组id */
+    @ApiParam("分组id")
     private String groupId;
     /** 分组名称 */
+    @ApiParam("分组名称")
     private String groupName;//扩展
 
+    @ApiParam("部门id")
     private Long deptId;//部门id
     /** 素材名称 */
     @Excel(name = "素材名称")
+    @ApiParam("素材名称")
     private String materialName;
 
     /** 素材类型 字典 1图片2视频3文本 */
+    @ApiParam("素材类型 字典 1图片2视频3文本")
     @Excel(name = "素材类型 字典 1图片2视频3文本")
     private String materialType;
 
     /** 素材描述 */
+    @ApiParam("素材描述")
     @Excel(name = "素材描述")
     private String description;
 
     /** 素材大小 */
+    @ApiParam("素材大小")
     @Excel(name = "素材大小")
     private String materialSize;
 
     /** 保存路径 */
+    @ApiParam("保存路径")
     private String savePath;
 
     /** 缩略图 */
+    @ApiParam("缩略图")
     private String thumbnail;
 
     /** 审核状态 0待审批2未通过1通过 */
+    @ApiParam("审核状态 0待审批2未通过1通过")
     @Excel(name = "审核状态 0待审批2未通过1通过")
     private String auditState;
 
     /** 审核意见 */
+    @ApiParam("审核意见")
     @Excel(name = "审核意见")
     private String auditReason;
 
     /** 可用状态 0停用1启用 */
+    @ApiParam("可用状态 0停用1启用")
     @Excel(name = "可用状态 0停用1启用")
     private String useState;
 
     /** 分辨率 宽 */
+    @ApiParam("分辨率 宽")
     @Excel(name = "分辨率 宽")
     private String width;
 
     /** 分辨率 高 */
+    @ApiParam("分辨率 高")
     @Excel(name = "分辨率 高")
     private String height;
 
     /** 上传者 id */
+    @ApiParam("上传者 id")
     private String uploaderId;
 
     /** 上传日期 */

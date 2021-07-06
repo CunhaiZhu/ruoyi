@@ -2,6 +2,7 @@ package com.ruoyi.cms.domain;
 
 import com.ruoyi.common.core.annotation.Excel;
 import com.ruoyi.common.core.web.domain.BaseEntity;
+import io.swagger.annotations.ApiParam;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -16,35 +17,44 @@ public class Ad extends BaseEntity
     private static final long serialVersionUID = 1L;
 
     /** 广告位ID */
+    @ApiParam("广告位ID")
     private Long adId;
 
     /** 广告位编码 */
     @Excel(name = "广告位编码")
+    @ApiParam("广告位编码")
     private String adCode;
 
     /** 广告位名称 */
     @Excel(name = "广告位名称")
+    @ApiParam("广告位名称")
     private String adName;
 
     /** 宽度 */
     @Excel(name = "宽度")
+    @ApiParam("宽度")
     private Integer width;
 
     /** 高度 */
     @Excel(name = "高度")
+    @ApiParam("高度")
     private Integer height;
 
     /** 状态 */
+    @ApiParam("状态")
     @Excel(name = "状态")
     private Integer status;
 
     /** 创建人ID */
+    @ApiParam("创建人ID")
     private String userId;
 
     /** 部门ID */
+    @ApiParam("部门ID")
     private String deptId;
 
     /** 描述 */
+    @ApiParam("描述")
     private String description;
 
     public void setAdId(Long adId)
